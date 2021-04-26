@@ -387,16 +387,6 @@ header {
   border-width: 0;
   margin-bottom: 10px;
 }
-@media (min-width: 768px) {
-  .card {
-    margin-bottom: 100px;
-  }
-  .card .badge {
-    top: 30px;
-    left: 30px;
-    padding: 10px 20px;
-  }
-}
 .card:hover {
   box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 25%);
 }
@@ -407,6 +397,17 @@ header {
   padding: 5px 10px;
 
   border-radius: 0px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    margin-bottom: 100px;
+  }
+  .card .badge {
+    top: 30px;
+    left: 30px;
+    padding: 10px 20px;
+  }
 }
 .card-img-top {
   padding-top: 30px;
