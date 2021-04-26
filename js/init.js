@@ -14,7 +14,8 @@ $(document).ready(function () {
 });
 
 function openNav() {
-  document.getElementById("sideNav").style.width = "415px";
+  // document.getElementById("sideNav").style.width = "100%";
+  // document.getElementById("sideNav").style.display = "block";
   document.getElementById("sideNav").style.left = "0%";
   document.getElementById("overlay").style.width = "100%";
   document.getElementById("overlay").style.opacity = 0.8;
@@ -22,13 +23,30 @@ function openNav() {
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
-  document.getElementById("sideNav").style.width = "0";
+  // document.getElementById("sideNav").style.width = "0%";
+  // document.getElementById("sideNav").style.display = "none";
   document.getElementById("sideNav").style.left = "-100%";
   document.getElementById("overlay").style.width = "0%";
   document.getElementById("overlay").style.opacity = 0;
 }
 
-function noBack() {
-  window.parent.history.forward();
-  window.parent.forward();
+// /* The latest entry in the web browser's history is now "modal.html#modalOpen".
+//  * The entry before this is "modal.html#modalClosed". */
+var modalShow = "";
+$(".modal").on("show.bs.modal", function (e) {
+  modalShow = e.target.id;
+});
+
+var modalHide = [];
+$(".modal").on("hide.bs.modal", function (e) {
+  modalHide.push(e.target.id);
+});
+
+function backModal() {
+  $(".modal").modal("hide");
+
+  modalHideTmp = modalHide[modalHide.length - 2];
+
+  $(`#${modalHideTmp}`).modal("show");
+  modalHide = [];
 }
