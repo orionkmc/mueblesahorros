@@ -38,6 +38,12 @@ button:focus {
   max-width: 300px;
   width: 100%;
 }
+@media (max-width: 767.98px) {
+  .sidenav {
+    max-width: 100%;
+    height: 100%;
+  }
+}
 
 .logo-xs {
   width: 65%;
@@ -195,7 +201,7 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
   width: auto;
-  height: 80px;
+  height: 100px;
   transition: all 0.5s;
 }
 
@@ -208,8 +214,10 @@ header {
   .main-header-right {
     display: flex;
   }
+}
+@media (min-width: 992px) {
   .logo-link {
-    margin-left: 3.75rem;
+    margin-left: 3rem;
   }
   .main-header-logo .img-fluid {
     height: 100px;
@@ -217,7 +225,15 @@ header {
 }
 .search {
   justify-content: flex-end;
-  margin-right: 2rem;
+  margin-right: 4rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .search {
+    justify-content: flex-end;
+    margin-right: 4rem;
+    width: 50%;
+  }
 }
 .search .form-control {
   width: 80%;
@@ -286,8 +302,19 @@ header {
 .main-link li:first-child {
   padding-left: 0;
 }
-
-.main-link li::after {
+@media (min-width: 768px) {
+  .main-link li::after {
+    content: "";
+    background-color: var(--primary-color);
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+}
+.popover__wrapper::after {
   content: "";
   background-color: var(--primary-color);
   display: inline-block;
@@ -323,6 +350,17 @@ header {
   .main-link li img {
     max-height: 30px;
   }
+  .logo-link .img-fluid {
+    margin-left: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .main-link li {
+    padding: 0 1rem;
+  }
+  .main-link li:first-child {
+    padding-right: 1rem;
+  }
 }
 .main-link li:last-child:after {
   content: none;
@@ -356,7 +394,7 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: var(--primary-color);
-  padding: 0 5px;
+  padding: 0 calc(5px + 0.5rem);
   position: relative;
   text-transform: uppercase;
   background-color: #fff;
@@ -375,7 +413,7 @@ header {
   font-size: 0.8rem;
   line-height: 0.9;
   color: var(--primary-color);
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   border-bottom: 2px solid transparent;
 }
 
@@ -470,6 +508,7 @@ header {
 @media (min-width: 768px) {
   .card {
     margin-bottom: 100px;
+    margin-top: 10px;
   }
   .card .badge {
     top: 16px;
@@ -699,10 +738,18 @@ footer a:hover {
 .description-logo {
   padding-top: 20px;
 }
+.divisor-mobile {
+  border-top: 1px solid rgb(255 255 255 / 35%);
+  margin-bottom: 40px;
+}
 @media (min-width: 768px) {
+  .divisor-mobile {
+    border-top: none;
+    margin-bottom: 0px;
+  }
   .divisor {
-    width: 2px;
-    height: 90%;
+    width: 1px;
+    height: 95%;
     background-color: rgb(255 255 255 / 35%);
     margin: auto;
   }
@@ -712,6 +759,7 @@ footer a:hover {
   text-align: center;
   font-size: 1.2rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   /* text-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%); */
 }
 @media (min-width: 1600px) {
@@ -731,7 +779,7 @@ footer a:hover {
     display: flex;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .newsletter h3 {
     font-size: 1rem;
   }
@@ -747,6 +795,11 @@ footer a:hover {
   }
   .logo-right {
     margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .newsletter h3 {
+    font-size: 0.8rem;
   }
 }
 .logo-right a:first-child {
@@ -778,7 +831,7 @@ footer a:hover {
 .footer-link {
   padding-top: 30px;
   padding-bottom: 30px;
-  border-top: 2px solid rgb(255 255 255 / 35%);
+  border-top: 1px solid rgb(255 255 255 / 35%);
 }
 .footer-link ul {
   padding-left: 0;
@@ -802,7 +855,7 @@ footer a:hover {
   content: "";
   background-color: rgb(255 255 255 / 35%);
   display: inline-block;
-  width: 2px;
+  width: 1px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -850,24 +903,29 @@ footer a:hover {
     padding-right: 1.5rem;
   }
 }
+.navbar-toggler::after {
+  content: "";
+  background-color: var(--primary-color);
+  display: inline-block;
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  right: 0;
+}
 
 @media (min-width: 992px) {
   .navbar-toggler::after {
-    content: "";
-    background-color: var(--primary-color);
-    display: inline-block;
-    width: 1px;
-    height: 46px;
-    position: absolute;
-    top: calc(50% - 23px);
-    right: -4rem;
+    height: 40px;
+    top: calc(50% - 20px);
+    right: -3rem;
   }
 
   .navbar-toggler {
     padding: 0;
-    margin-right: 4rem;
+    margin-right: 3rem;
     /* margin-left: calc((var(--bs-gutter-x) / -2) + 3.25rem - 15px); */
-    margin-left: 4rem;
+    margin-left: 3rem;
   }
 }
 /* } */
@@ -1028,7 +1086,6 @@ footer a:hover {
   padding: 8px 30px;
 }
 
-.btn-suscribe:hover:before,
 .btn-suscribe:focus:before,
 .btn-suscribe:active:before {
   display: block;
@@ -1097,7 +1154,7 @@ footer a:hover {
   margin-bottom: 36px;
 }
 .carousel-indicators {
-  bottom: 12vh;
+  bottom: 10vh;
   display: block;
   /* right: 10%; */
   text-align: center;
@@ -1127,7 +1184,7 @@ footer a:hover {
   transform: scale(1.5);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .carousel-caption .title {
     margin-bottom: 10px;
   }
@@ -1158,7 +1215,7 @@ footer a:hover {
   }
   .carousel-caption p {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .carousel-control-next {
     right: 5px !important;
@@ -1177,6 +1234,7 @@ footer a:hover {
 @media (min-width: 768px) {
   .carousel-caption .title {
     font-size: 30px;
+    margin-bottom: 1.5rem;
   }
   .carousel-caption {
     font-size: 1rem;
@@ -1229,7 +1287,7 @@ footer a:hover {
   width: 80px;
   height: 80px;
   bottom: 20px;
-  right: 0px;
+  right: 60px;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
@@ -1256,7 +1314,7 @@ a.whatsapp:hover {
   width: 80px;
   height: 80px;
   bottom: 20px;
-  right: 60px;
+  right: 0px;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
@@ -1342,13 +1400,29 @@ input[type="checkbox"] {
 .icon-extended {
   transition: all 0.5s;
 }
+.icon-extended img {
+  width: 50%;
+}
 .icon-extended:hover {
   transform: scale(1.2);
 }
 
+.tab-content .carousel-inner {
+  padding: 30px 0px 0 0px;
+}
+@media (min-width: 360px) {
+  .tab-content .carousel-inner {
+    padding: 30px 10px 0 10px;
+  }
+}
+@media (min-width: 768px) {
+  .tab-content .carousel-inner {
+    padding: 30px 25px 0 25px;
+  }
+}
 .tab-content .carousel-control-next img {
-  transform: translateY(-100%);
+  transform: translateY(-100%) translateX(100%);
 }
 .tab-content .carousel-control-prev img {
-  transform: translateY(-100%);
+  transform: translateY(-100%) translateX(-100%);
 }
