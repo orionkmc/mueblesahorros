@@ -248,8 +248,10 @@ header {
   outline: none;
 }
 .search .q {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: flex;
+  align-items: center;
   color: var(--primary-color);
   padding-right: 1rem;
   /* padding-left: 0; */
@@ -284,10 +286,17 @@ header {
 
 .main-link .cart .badge {
   position: absolute;
-  right: -10px;
-  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  top: -3px;
+  left: 35px;
+  border-radius: 50px;
+  font-size: 0.8rem;
   font-weight: normal;
-  padding: 0.35em 0.6em;
+  padding: 0 5px;
 }
 .bg-red {
   background-color: #ff0000 !important;
@@ -299,8 +308,22 @@ header {
   padding: 0 40px;
   position: relative;
 }
+.main-link li img {
+  max-height: 40px;
+}
 .main-link li:first-child {
   padding-left: 0;
+}
+.logo-link .logo-big {
+  display: none;
+}
+@media (min-width: 400px) {
+  .logo-link .logo-big {
+    display: block;
+  }
+  .logo-link .logo-small {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .main-link li::after {
@@ -352,6 +375,14 @@ header {
   }
   .logo-link .img-fluid {
     margin-left: 24px;
+  }
+  .main-link .cart .badge {
+    min-width: 15px;
+    height: 15px;
+    top: -3px;
+    left: 20px;
+    border-radius: 50px;
+    font-size: 0.6rem;
   }
 }
 @media (max-width: 576px) {
@@ -495,6 +526,7 @@ header {
 .card:hover {
   box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 25%);
   transform: scale(1.1);
+  z-index: 1;
 }
 .card .badge {
   position: absolute;
@@ -552,7 +584,7 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   text-decoration: line-through;
-  margin-left: 4px;
+  margin-left: 24px;
   margin-bottom: 2px;
   align-self: flex-end;
 }
@@ -590,9 +622,6 @@ header {
   }
   .price {
     font-size: 1rem;
-  }
-  .offer {
-    margin-left: 24px;
   }
   .price {
     display: flex;
@@ -662,7 +691,9 @@ footer {
 footer a {
   color: #fff;
 }
-footer a:hover {
+footer .newsletter a:hover,
+footer .contact-list a:hover,
+footer .footer-link a:hover {
   color: #fcef7f;
 }
 
@@ -749,7 +780,7 @@ footer a:hover {
   }
   .divisor {
     width: 1px;
-    height: 95%;
+    height: calc(100% - 50px);
     background-color: rgb(255 255 255 / 35%);
     margin: auto;
   }
@@ -814,7 +845,7 @@ footer a:hover {
 }
 
 .contact-list li {
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
 }
@@ -1311,13 +1342,14 @@ a.whatsapp:hover {
 }
 .messenger {
   position: fixed;
-  width: 80px;
-  height: 80px;
-  bottom: 20px;
-  right: 0px;
+  width: 50px;
+  height: 50px;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 7px 4px 4px 4px;
+  background-color: #fff;
   border-radius: 50px;
   text-align: center;
-  font-size: 30px;
   z-index: 3;
   transition: all 0.2s ease-in-out;
 }
