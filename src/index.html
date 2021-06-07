@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  @@include("partials/head.html", {"title": "Inicio"})
+
+  <link rel="stylesheet" href="assets/css/index.min.css">
+</head>
+<body>
+  <div id="overlay" class="overlay" onclick="closeNav()" style="width: 0%; opacity: 0"></div>
+
+  @@include("partials/sidenav.html")
+  @@include("partials/navbar.html")
+  @@include("partials/index/welcome.html")
+  
+  <main class="content">
+    
+    @@include("partials/index/productos.html")
+    
+  </main>
+  
+  @@include("partials/footer.html")
+
+  @@include("partials/modals.html")
+
+  <!-- <a href="#video-whatsapp" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="whatsapp d-none d-lg-block" >
+    <img src="./assets/images/whatsapp.png" alt="" />
+  </a> -->
+  
+  <a href="" class="messenger d-none d-lg-block" >
+    <img class=img-fluid src="./assets/images/messenger.svg" alt="" />
+  </a>
+
+  @@include("partials/scripts.html")
+  
+</body>
+</html>

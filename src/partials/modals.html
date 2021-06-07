@@ -1,0 +1,338 @@
+<div id="login" id="login" class="modal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title text-center">INICIAR SESIÓN</h3>
+        <div class="d-grid gap-2">
+          <input type="text" class="form-control" placeholder="Correo electrónico" />
+          
+          <div class="input-group mb-3 show_hide_password">
+            <input type="password" class="form-control" placeholder="Contraseña" />
+            <a class="eye" href="javascript:void(0)">
+              <i class="fa fa-eye-slash fa-lg" aria-hidden="true"></i>
+            </a>
+          </div>
+          
+          <a class="mb-4" href="#reset-pass" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" >
+            ¿Has olvidado tu contraseña?
+          </a>
+          
+          <div class="text-center mb-3">
+            <a href="javascript:void(0)" class="btn btn-add">
+              Iniciar sesión
+            </a>
+          </div>
+          
+          <p class="text-center">
+            ¿Todavía no tienes una cuenta?
+            <a href="#register" data-bs-toggle="modal" data-bs-dismiss="modal" role="button">
+              <strong>¡Regístrate ahora!</strong>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="reset-pass" class="modal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title text-center">RESTAURAR CONTRASEÑA</h3>
+        
+        <p>
+          Introduce la dirección de correo electrónico que utilizaste para
+          registrarte y te enviaremos un enlace para restablecer tu
+          contraseña.
+        </p>
+        <div class="d-grid gap-2">
+          <input type="text" class="form-control" placeholder="Correo electrónico" />
+          
+          <div class="d-flex justify-content-between mt-5 mb-3">
+            <a href="javascript:void(0)" onclick="backModal()" class="btn btn-add" >
+              Atrás
+            </a>
+            <a href="#reset-pass-msg" data-bs-toggle="modal" data-bs-dismiss="modal" ole="button" class="btn btn-add" >
+              Restaurar
+            </a>
+          </div>
+          
+          <p class="text-center">
+            ¿Todavía no tienes una cuenta?
+            <a href="#register" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" >
+              <strong>¡Regístrate ahora!</strong>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="reset-pass-msg" class="modal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title text-center">¡REVISA TU CORREO!</h3>
+        
+        <p class="text-center">
+          <lord-icon src="./assets/images/mail-open-outline.json" trigger="loop" target="a" colors="primary:#203165;,secondary:#8195d1;" style="width:50%; height:50%;"></lord-icon>
+        </p>
+        <p class="text-center">
+          Te hemos enviado un correo eletrónico a nombre@dominio.com con las
+          instrucciones para restablecer tu contraseña.
+        </p>
+        
+        <div class="text-center mt-4 mb-3">
+          <a href="#login" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="btn btn-add" >
+            Iniciar sesión
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="register" class="modal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title text-center">REGISTRO</h3>
+        
+        <h4 class="modal-title-2">DATOS DE CONTACTO</h4>
+        
+        <div class="d-grid gap-2">
+          <input type="text" class="form-control" placeholder="Nombre" />
+          
+          <input type="text" class="form-control" placeholder="Apellidos" />
+          
+          <input type="text" class="form-control" placeholder="Correo electrónico" />
+          
+          <div class="input-group mb-3 show_hide_password">
+            <input type="password" class="form-control" placeholder="Contraseña" />
+            <a class="eye" href="javascript:void(0)">
+              <i class="fa fa-eye-slash fa-lg" aria-hidden="true"></i>
+            </a>
+          </div>
+          
+          <div class="input-group mb-3 show_hide_password">
+            <input type="password" class="form-control" placeholder="Repetir contraseña" />
+          </div>
+          
+          <input type="text" class="form-control" placeholder="Teléfono móvil" />
+          
+          <div class="d-flex justify-content-end mt-5 mb-3">
+            <a href="#register-address" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="btn btn-add" >
+              Siguiente
+            </a>
+          </div>
+          
+          <p class="text-center">
+            ¿Ya tienes una cuenta?
+            <a href="#login" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" >
+              <strong>¡Inicia sesión ahora!</strong>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="register-address" class="modal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title text-center">REGISTRO</h3>
+        <h4 class="modal-title-2">DATOS DE ENVÍO</h4>
+        
+        <div class="d-grid gap-2">
+          <input type="text" class="form-control" placeholder="Dirección" />
+          
+          <input type="text" class="form-control" placeholder="Número" />
+          
+          <input type="text" class="form-control" placeholder="Código postal" />
+          
+          <input type="text" class="form-control" placeholder="Ciudad" />
+          
+          <input type="text" class="form-control" placeholder="Provincia" />
+          
+          <input type="text" class="form-control" placeholder="País" />
+          
+          <div class="d-flex justify-content-between mt-5 mb-3">
+            <a href="javascript:void(0)" onclick="backModal()" class="btn btn-add" >
+              Atrás
+            </a>
+            <a href="#register-msg" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="btn btn-add" >
+              Registrarse
+            </a>
+          </div>
+          
+          <p class="text-left">
+            Al registrarte aceptas la
+            <a href="javascript:void(0)">
+              <strong>Política de Privacidad</strong>
+            </a>
+            y los
+            <a href="javascript:void(0)">
+              <strong>Términos y condiciones.</strong>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="register-msg" class="modal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title text-center">CUENTA CREADA</h3>
+        
+        <p class="text-center">
+          <lord-icon src="./assets/images/approved-checked-outline.json" trigger="loop" target="a" colors="primary:#203165;,secondary:#8195d1;" style="width:50%; height:50%;"></lord-icon>
+        </p>
+        <p class="text-center">
+          ¡Bienvenido @nombre a <br />
+          nuestra fantástica comunidad!
+        </p>
+        
+        <div class="text-center mt-4 mb-3">
+          <a href="#login" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="btn btn-add" >
+            Iniciar sesión
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="video-whatsapp-2" class="modal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header pb-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center mb-3">
+          <img class="img-fluid" src="./assets/images/logo.svg" alt="" />
+        </div>
+        <h3 class="modal-title text-center">¡VIDEOLLAMADA POR WHATSAPP!</h3>
+        <ul class="contact-list mt-2">
+          <li>
+            <img src="./assets/images/clock.svg" width="42" height="42" alt="" />
+            <span>30 min </span>
+          </li>
+          <li>
+            <img src="./assets/images/calendar.svg" alt="" width="41" height="42" />
+            <span>
+              9:30 - 10:00, domingo, 31 de <br />
+              diciembre de 2021
+            </span>
+          </li>
+          <li>
+            <img src="./assets/images/global.svg" alt="" width="42" height="42" />
+            
+            <span>Europa Occidental</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="video-whatsapp" class="modal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+      <div class="modal-body pb-0">
+        <div class="row">
+          <div class="col-md-6 ms-auto col-divider">
+            <div class="modal-header"></div>
+            <div class="container">
+              <div class="text-center mb-3">
+                <img class="img-fluid" src="./assets/images/logo.svg" alt="" />
+              </div>
+              <h3 class="modal-title-2 text-left">
+                ¡VIDEOLLAMADA POR WHATSAPP!
+              </h3>
+              <ul class="contact-list mt-2">
+                <li>
+                  <img src="./assets/images/clock.svg" width="42" height="42" alt="" />
+                  <span>30 min </span>
+                </li>
+                <li>
+                  <img src="./assets/images/calendar.svg" alt="" width="41" height="42" />
+                  <span>
+                    9:30 - 10:00, domingo, 31 de <br />
+                    diciembre de 2021
+                  </span>
+                </li>
+                <li>
+                  <img src="./assets/images/global.svg" alt="" width="42" height="42" />
+                  
+                  <span>Europa Occidental</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-md-6 ms-auto">
+            <div class="modal-header" style="padding-right: 0">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+            </div>
+            
+            <div class="container">
+              <h3 class="modal-title-2 text-center">DATOS DE CONTACTO</h3>
+              
+              <form class="mb-5 pb-5" action="">
+                <input type="text" class="form-control" placeholder="Nombre" />
+                
+                <input type="text" class="form-control" placeholder="Correo electrónico" />
+                
+                <input type="text" class="form-control" placeholder="Teléfono móvil" />
+                
+                <input type="text" class="form-control" placeholder="Cuéntanos brevemente sobre qué deseas hablar" />
+              </form>
+            </div>
+          </div>
+          
+          <div class="col-md-6 pt-5 mb-3 col-divider">
+            <div class="d-flex justify-content-start mt-5 pt-5 mb-3">
+              <a href="javascript:void(0)" onclick="backModal()" class="btn btn-add" >
+                Atrás
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-md-6 pt-5 mb-3">
+            <div class="d-flex justify-content-end mt-5 pt-5 mb-3">
+              <a href="#video-whatsapp-2" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="btn btn-add" >
+                Reservar cita
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

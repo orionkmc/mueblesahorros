@@ -1,0 +1,52 @@
+<header class="">
+  <div class="main-header" style="width: 100%;">
+    <div class="row">
+      <div class="col-7 col-sm-6 col-md-5 col-xl-5 col-xxl-4">
+        <div class="main-header-logo">
+          <button class="navbar-toggler" type="button" onclick="openNav()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="logo-link" href="index.html">
+            <img class="logo-big img-fluid" src="./assets/images/logo.svg"/>
+            <img class="logo-small img-fluid" src="./assets/images/logo-mobile.svg"/>
+          </a>
+        </div>
+      </div>
+      
+      <div class="col-5 col-sm-6 col-md-7 col-xxl-8 main-header-right">
+        <div class="bg-search-mobile"></div>
+        <div class="input-group search">
+          <input type="text" class="form-control" placeholder="¿Qué producto estás buscando?" />
+          <button type="button" class="q">
+            <img class="img-fluid" src="./assets/images/custom-icon/search.svg" alt="" />
+          </button>
+        </div>
+        
+        <ul class="main-link">
+          <li class="popover__wrapper">
+            <a href="javascript:void(0)">
+              <img class="popover__title" src="./assets/images/custom-icon/user.svg" alt="" />
+            </a>
+            <div class="popover__content">
+              <div class="d-grid gap-3">
+                <a class="btn btn-add" href="#login" data-bs-toggle="modal" role="button" >
+                  Iniciar sesión
+                </a>
+                <a class="btn btn-add" href="#register" data-bs-toggle="modal" role="button" >
+                  Registrarse
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a class="cart anime-zoom" href="javascript:void(0)">
+              <span class="badge bg-red">99</span>
+              <img src="./assets/images/custom-icon/cart.svg" alt=""/>
+            </a>
+          </li>
+          <li class="d-none d-md-block"><a href="javascript:void(0)">Tienda</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
