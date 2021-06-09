@@ -1,0 +1,38 @@
+header {
+  @media (min-width: 360px) and (max-width: 374.98px) {
+    .logo-link .img-fluid {
+      margin-left: 40px;
+    }
+  }
+  @media (min-width: 375px) and (max-width: 399.98px) {
+    .logo-link .logo-small {
+      margin-left: 13vw;
+    }
+  }
+  @media (min-width: 400px) and (max-width: 499.98px) {
+    .main-header-left {
+      flex: 0 0 auto;
+      width: 62%;
+    }
+    .main-header-right {
+      flex: 0 0 auto;
+      width: 38%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023.98px) {
+    .main-header-left {
+      flex: 0 0 auto;
+      width: 26%;
+    }
+    .main-header-right {
+      flex: 0 0 auto;
+      width: 74%;
+    }
+    .logo-link .logo-big {
+      display: none;
+    }
+    .logo-link .logo-small {
+      display: block;
+    }
+  }
+}

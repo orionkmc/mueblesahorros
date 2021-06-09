@@ -202,6 +202,10 @@ header {
     margin-right: 2rem;
     width: 50%; } }
 
+@media (min-width: 1200px) {
+  .search {
+    margin-right: 4rem; } }
+
 .search .form-control {
   width: 100%;
   /* max-width: 489px; */
@@ -337,17 +341,20 @@ header {
     top: 100px;
     left: 0;
     width: 100vw;
-    height: 64px;
-    background-color: #fff; }
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15); }
   .search {
     position: absolute;
-    top: 110px;
+    top: 95px;
     left: 50%;
     max-width: 90vw;
     margin: 0;
     transform: translateX(-50%); } }
 
 @media (max-width: 576px) {
+  .main-link {
+    padding-right: 12px; }
   .main-link li {
     padding: 0 1rem; }
   .main-link li:first-child {
@@ -404,6 +411,7 @@ header {
 .bar ul li a.active,
 .bar ul li a:hover {
   padding-bottom: 10px;
+  color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color); }
 
 .bar li::after {
@@ -464,7 +472,7 @@ header {
   transition: all 0.5s; }
 
 .card:hover {
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
   transform: scale(1.1);
   z-index: 1; }
 
@@ -644,7 +652,7 @@ footer .footer-link a:hover {
 
 @media (max-width: 767.98px) {
   .logo-footer {
-    width: 60%; }
+    width: 80%; }
   .extended-top,
   .extended-bottom {
     width: 160%; } }
@@ -718,7 +726,7 @@ footer .footer-link a:hover {
 
 @media (max-width: 767.98px) {
   .newsletter h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 0; }
   .footer-logos {
     display: flex;
@@ -731,10 +739,6 @@ footer .footer-link a:hover {
   .logo-right {
     margin-top: 20px; } }
 
-@media (min-width: 768px) and (max-width: 1200px) {
-  .newsletter h3 {
-    font-size: 0.8rem; } }
-
 .logo-right a:first-child {
   margin-right: 10px; }
 
@@ -742,7 +746,7 @@ footer .footer-link a:hover {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  margin-top: 46px; }
+  margin-top: 30px; }
 
 .contact-list li {
   margin-bottom: 1rem;
@@ -800,9 +804,15 @@ footer .footer-link a:hover {
 
 @media (max-width: 767.98px) {
   .footer-link {
-    margin-top: 14px; }
+    margin-top: 14px; } }
+
+@media (min-width: 768px) {
   .contact-list {
-    margin-top: 30px; } }
+    margin-top: 95px; } }
+
+@media (min-width: 1200px) {
+  .contact-list {
+    margin-top: 20px; } }
 
 @media (max-width: 768px) {
   .footer-link ul {
@@ -869,7 +879,7 @@ footer .footer-link a:hover {
   background-color: #fff;
   padding: 1rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  width: 226px;
+  width: 210px;
   border-radius: 25px;
   z-index: 10; }
 
@@ -1055,7 +1065,7 @@ footer .footer-link a:hover {
   margin-bottom: 36px; }
 
 .carousel-indicators {
-  bottom: 12vh;
+  bottom: 16vh;
   display: block;
   /* right: 10%; */
   text-align: center; }
@@ -1098,7 +1108,7 @@ footer .footer-link a:hover {
     top: 0;
     left: 0; }
   .carousel-caption .title {
-    font-size: 1.5rem; }
+    font-size: 1.2rem; }
   .carousel-caption {
     text-align: center;
     display: flex;
@@ -1108,12 +1118,12 @@ footer .footer-link a:hover {
   .carousel-caption .btn-add {
     margin: 0 auto;
     position: absolute;
-    bottom: 17vh;
+    bottom: 22vh;
     left: 50%;
     transform: translateX(-50%); }
   .carousel-caption p {
     text-align: center;
-    font-size: 1rem; }
+    font-size: 0.9rem; }
   .carousel-control-next {
     right: 5px !important; }
   .carousel-control-prev {
@@ -1123,6 +1133,20 @@ footer .footer-link a:hover {
     width: 25px; }
   .subscribed {
     text-align: center; } }
+
+@media (max-width: 374.98px) {
+  .carousel-caption .title {
+    font-size: 1.1rem; }
+  .carousel-caption p {
+    text-align: center;
+    font-size: 0.8rem; }
+  .carousel-caption .btn-add {
+    bottom: 22vh;
+    padding: 8px 32px; }
+  .carousel-indicators {
+    bottom: 15vh; }
+  .bar ul li a {
+    font-size: 0.7rem; } }
 
 @media (min-width: 768px) {
   .carousel-caption .title {
@@ -1279,9 +1303,17 @@ input[type="checkbox"] {
 .tab-content .carousel-control-prev img {
   transform: translateY(-100%) translateX(-100%); }
 
+@media (max-width: 359.98px) {
+  .price {
+    font-size: .6rem; }
+  .offer {
+    font-size: .5rem; } }
+
 @media (max-width: 319.98px) {
   .logo-link .img-fluid {
-    margin-left: 8px; }
+    margin-left: 5px; }
+  .carousel-caption .title {
+    font-size: 1rem; }
   .carousel-caption .btn-add {
     padding-right: 1rem;
     padding-left: 1rem; }
@@ -1306,3 +1338,65 @@ input[type="checkbox"] {
     left: 5px; }
   footer {
     font-size: 0.8rem; } }
+
+@media (min-width: 360px) and (max-width: 374.98px) {
+  header .logo-link .img-fluid {
+    margin-left: 40px; } }
+
+@media (min-width: 375px) and (max-width: 399.98px) {
+  header .logo-link .logo-small {
+    margin-left: 13vw; } }
+
+@media (min-width: 400px) and (max-width: 499.98px) {
+  header .main-header-left {
+    flex: 0 0 auto;
+    width: 62%; }
+  header .main-header-right {
+    flex: 0 0 auto;
+    width: 38%; } }
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  header .main-header-left {
+    flex: 0 0 auto;
+    width: 26%; }
+  header .main-header-right {
+    flex: 0 0 auto;
+    width: 74%; }
+  header .logo-link .logo-big {
+    display: none; }
+  header .logo-link .logo-small {
+    display: block; } }
+
+@media (min-width: 500px) and (max-width: 767.98px) {
+  footer .description-logo,
+  footer .form-check,
+  footer .contact-list {
+    padding-left: 5px;
+    margin-top: 50px; }
+  footer .input-suscribed {
+    flex: 0 0 auto;
+    width: 58.3333333333%; }
+  footer .subscribed {
+    flex: 0 0 auto;
+    width: 41.6666666667%; } }
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  footer .contact-list {
+    margin-top: 50px; } }
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  footer .newsletter h3 {
+    font-size: 0.8rem; } }
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+  footer .newsletter h3 {
+    font-size: 1rem; }
+  footer .contact-list {
+    margin-top: 50px; } }
+
+@media (max-width: 319.98px) {
+  footer .footer-logos .logo-left img,
+  footer .footer-logos .logo-right img {
+    width: 70%; }
+  footer .logo-right a:first-child {
+    margin-right: -4px; } }

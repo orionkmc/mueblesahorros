@@ -235,6 +235,11 @@ header {
     width: 50%;
   }
 }
+@media (min-width: 1200px) {
+  .search {
+    margin-right: 4rem;
+  }
+}
 .search .form-control {
   width: 100%;
   /* max-width: 489px; */
@@ -327,6 +332,7 @@ header {
     display: none;
   }
 }
+
 @media (min-width: 768px) {
   .main-link li::after {
     content: "";
@@ -385,12 +391,13 @@ header {
     top: 100px;
     left: 0;
     width: 100vw;
-    height: 64px;
+    height: 50px;
     background-color: #fff;
+    box-shadow: 0px 8px 8px 0px rgba($color: #000000, $alpha: 0.15);
   }
   .search {
     position: absolute;
-    top: 110px;
+    top: 95px;
     left: 50%;
     max-width: 90vw;
     margin: 0;
@@ -398,6 +405,9 @@ header {
   }
 }
 @media (max-width: 576px) {
+  .main-link {
+    padding-right: 12px;
+  }
   .main-link li {
     padding: 0 1rem;
   }
@@ -463,6 +473,7 @@ header {
 .bar ul li a.active,
 .bar ul li a:hover {
   padding-bottom: 10px;
+  color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
 }
 
@@ -536,7 +547,7 @@ header {
   transition: all 0.5s;
 }
 .card:hover {
-  box-shadow: 0px 0px 15px 0px rgba($color: #000000, $alpha: 0.25);
+  box-shadow: 0px 0px 8px 0px rgba($color: #000000, $alpha: 0.25);
   transform: scale(1.1);
   z-index: 1;
 }
@@ -745,7 +756,7 @@ footer .footer-link a:hover {
 }
 @media (max-width: 767.98px) {
   .logo-footer {
-    width: 60%;
+    width: 80%;
   }
   .extended-top,
   .extended-bottom {
@@ -827,7 +838,7 @@ footer .footer-link a:hover {
 }
 @media (max-width: 767.98px) {
   .newsletter h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 0;
   }
   .footer-logos {
@@ -844,11 +855,7 @@ footer .footer-link a:hover {
     margin-top: 20px;
   }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
-  .newsletter h3 {
-    font-size: 0.8rem;
-  }
-}
+
 .logo-right a:first-child {
   margin-right: 10px;
 }
@@ -857,7 +864,7 @@ footer .footer-link a:hover {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  margin-top: 46px;
+  margin-top: 30px;
 }
 
 .contact-list li {
@@ -923,8 +930,15 @@ footer .footer-link a:hover {
   .footer-link {
     margin-top: 14px;
   }
+}
+@media (min-width: 768px) {
   .contact-list {
-    margin-top: 30px;
+    margin-top: 95px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-list {
+    margin-top: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -1011,7 +1025,7 @@ footer .footer-link a:hover {
   background-color: #fff;
   padding: 1rem;
   box-shadow: 0 2px 5px 0 rgba($color: #000000, $alpha: 0.26);
-  width: 226px;
+  width: 210px;
   border-radius: 25px;
   z-index: 10;
 }
@@ -1209,7 +1223,7 @@ footer .footer-link a:hover {
   margin-bottom: 36px;
 }
 .carousel-indicators {
-  bottom: 12vh;
+  bottom: 16vh;
   display: block;
   /* right: 10%; */
   text-align: center;
@@ -1260,7 +1274,7 @@ footer .footer-link a:hover {
     left: 0;
   }
   .carousel-caption .title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .carousel-caption {
     text-align: center;
@@ -1272,13 +1286,13 @@ footer .footer-link a:hover {
   .carousel-caption .btn-add {
     margin: 0 auto;
     position: absolute;
-    bottom: 17vh;
+    bottom: 22vh;
     left: 50%;
     transform: translateX(-50%);
   }
   .carousel-caption p {
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .carousel-control-next {
     right: 5px !important;
@@ -1292,6 +1306,25 @@ footer .footer-link a:hover {
   }
   .subscribed {
     text-align: center;
+  }
+}
+@media (max-width: 374.98px) {
+  .carousel-caption .title {
+    font-size: 1.1rem;
+  }
+  .carousel-caption p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .carousel-caption .btn-add {
+    bottom: 22vh;
+    padding: 8px 32px;
+  }
+  .carousel-indicators {
+    bottom: 15vh;
+  }
+  .bar ul li a {
+    font-size: 0.7rem;
   }
 }
 @media (min-width: 768px) {
@@ -1492,9 +1525,20 @@ input[type="checkbox"] {
   transform: translateY(-100%) translateX(-100%);
 }
 
+@media (max-width: 359.98px) {
+  .price {
+    font-size: .6rem;
+  }
+  .offer {
+    font-size: .5rem;
+  }
+}
 @media (max-width: 319.98px) {
   .logo-link .img-fluid {
-    margin-left: 8px;
+    margin-left: 5px;
+  }
+  .carousel-caption .title {
+    font-size: 1rem;
   }
   .carousel-caption .btn-add {
     padding-right: 1rem;
