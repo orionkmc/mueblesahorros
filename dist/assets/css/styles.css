@@ -1374,6 +1374,10 @@ input[type="checkbox"] {
     display: block;
     margin-left: 35px; } }
 
+@media (min-width: 992px) and (max-width: 1023.98px) {
+  header .logo-link {
+    margin-left: 0; } }
+
 @media (min-width: 500px) and (max-width: 767.98px) {
   footer .description-logo,
   footer .form-check,

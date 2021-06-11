@@ -44,4 +44,9 @@ header {
       margin-left: 35px;
     }
   }
+  @media (min-width: 992px) and (max-width: 1023.98px) {
+    .logo-link {
+      margin-left: 0;
+    }
+  }
 }
