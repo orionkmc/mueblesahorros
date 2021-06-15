@@ -1392,6 +1392,13 @@ input[type="checkbox"] {
   header .logo-link {
     margin-left: 0; } }
 
+footer .logo-right a:first-child {
+  margin-right: 3px; }
+
+footer .logo-left a img,
+footer .logo-right a img {
+  width: 40px; }
+
 @media (min-width: 500px) and (max-width: 767.98px) {
   footer .description-logo,
   footer .form-check,
@@ -1418,9 +1425,7 @@ input[type="checkbox"] {
   footer .contact-list {
     margin-top: 50px; } }
 
-@media (max-width: 319.98px) {
-  footer .footer-logos .logo-left img,
-  footer .footer-logos .logo-right img {
-    width: 70%; }
-  footer .logo-right a:first-child {
-    margin-right: -4px; } }
+@media (min-width: 1600px) {
+  footer .logo-left a img,
+  footer .logo-right a img {
+    width: 45px; } }

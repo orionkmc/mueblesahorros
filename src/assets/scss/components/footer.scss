@@ -1,4 +1,11 @@
 footer {
+  .logo-right a:first-child {
+    margin-right: 3px;
+  }
+  .logo-left a img,
+  .logo-right a img {
+    width: 40px;
+  }
   @media (min-width: 500px) and (max-width: 767.98px) {
     .description-logo,
     .form-check,
@@ -32,13 +39,10 @@ footer {
       margin-top: 50px;
     }
   }
-  @media (max-width: 319.98px) {
-    .footer-logos .logo-left img,
-    .footer-logos .logo-right img {
-      width: 70%;
-    }
-    .logo-right a:first-child {
-      margin-right: -4px;
+  @media (min-width: 1600px) {
+    .logo-left a img,
+    .logo-right a img {
+      width: 45px;
     }
   }
 }
