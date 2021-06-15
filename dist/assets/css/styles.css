@@ -37,7 +37,7 @@ button:focus {
   color: var(--primary-color); }
 
 .textos-parrafos a:hover {
-  color: blue; }
+  font-weight: bold; }
 
 .sidenav {
   width: 0;
