@@ -59,38 +59,3 @@
     white-space: nowrap; }
   #user-perfil table th, #user-perfil table td {
     border-bottom: 1px solid var(--primary-color); }
-
-#user-perfil select {
-  display: inline;
-  width: auto;
-  background-color: transparent;
-  color: var(--primary-color);
-  border-color: var(--primary-color);
-  border-radius: 2rem;
-  border-width: 3px;
-  font-family: Montserrat, sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.5rem 3rem;
-  transition: all .5s;
-  margin: 0 auto; }
-  @media (max-width: 359.98px) {
-    #user-perfil select {
-      font-size: 0.8rem;
-      padding: 0.5rem 2rem; } }
-  #user-perfil select:focus {
-    outline: none;
-    box-shadow: none; }
-  #user-perfil select:hover {
-    background-color: var(--primary-color);
-    color: #fff; }
-
-#user-perfil .page-prev img,
-#user-perfil .page-next img {
-  display: inline;
-  width: 1rem;
-  transition: all 0.5s; }
-
-#user-perfil .page-prev:hover img,
-#user-perfil .page-next:hover img {
-  opacity: 0.8; }
