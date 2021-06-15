@@ -19,7 +19,10 @@ a {
 
 body {
   overflow-x: hidden;
-  padding-top: 100px; }
+  padding-top: 150px; }
+  @media (min-width: 768px) {
+    body {
+      padding-top: 100px; } }
 
 button:focus {
   outline: none;
@@ -598,7 +601,8 @@ header {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  padding: 10px 32px; }
+  padding: 10px 32px;
+  transition: all 0.5s; }
 
 .btn-add:hover {
   color: #fff;
