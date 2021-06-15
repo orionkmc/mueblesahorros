@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  @@include("partials/head.html")
+</head>
+<body>
+  <div id="overlay" class="overlay" onclick="closeNav()" style="width: 0%; opacity: 0"></div>
+
+  @@include("partials/sidenav.html")
+  @@include("partials/navbar.html")
+  
+  <main class="content pt-4 pb-4">
+    
+    <div class="text-center pt-5 pb-5" style="color: var(--primary-color);">
+      <lord-icon
+        src="assets/images/7-cloud-error-outline.json"
+        trigger="loop-on-hover"
+        target="a"
+        colors="primary:#324e9e;,secondary:#324e9e;"
+        style="width:120px; height:120px;">
+      </lord-icon>
+      <h4>Página no encontrada</h4>
+      <p>Vaya... parece que la página que estas buscando no existe.<br>Prueba a intentarlo otra vez.</p>
+      <a href="#" class="btn btn-add">Ir al inicio</a>
+    </div>
+    
+  </main>
+  
+  @@include("partials/footer.html")
+
+  @@include("partials/modals.html")
+
+  <!-- <a href="#video-whatsapp" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="whatsapp d-none d-lg-block" >
+    <img src="./assets/images/whatsapp.png" alt="" />
+  </a> -->
+  
+  <a href="" class="messenger d-none d-lg-block" >
+    <img class=img-fluid src="./assets/images/messenger.svg" alt="" />
+  </a>
+
+  @@include("partials/scripts.html")
+  
+</body>
+</html>

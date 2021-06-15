@@ -25,6 +25,22 @@ button:focus {
   box-shadow: none !important;
 }
 
+.title-textos {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.textos-parrafos {
+  color: var(--primary-color);
+  font-weight: 400;
+}
+.textos-parrafos a {
+  color: var(--primary-color);
+}
+.textos-parrafos a:hover {
+  color: blue;
+}
+
 .sidenav {
   width: 0;
   position: fixed;
