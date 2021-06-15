@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  @@include("partials/head.html")
+
+  <link rel="stylesheet" href="assets/css/search.min.css">
+</head>
+<body>
+  <div id="overlay" class="overlay" onclick="closeNav()" style="width: 0%; opacity: 0"></div>
+
+  @@include("partials/sidenav.html")
+  @@include("partials/navbar.html")
+  
+  <main class="content container-fluid">
+    <div class="row seccion-search">
+      <div class="col-3 pt-5 filtros-search">
+        <i class="fa fa-sliders" aria-hidden="true" style="font-size: 1.5rem;"></i><span style="margin-left: 1.3rem;" class="textos-parrafos">FILTROS</span>
+        <div class="dropdown-divider"></div>
+        <div class="wrapper">
+          <button class="toggle">Promociones<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+          <div class="contents">
+            <div class="form-check">
+              <input class="form-check-input check-custom" type="checkbox" value="" id="checkNove">
+              <label class="form-check-label" for="checkNove">
+                Novedades
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input check-custom" type="checkbox" value="" id="checkOfer" checked>
+              <label class="form-check-label" for="checkOfer">
+                Ofertas
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <button class="toggle">How can I apply the coupon?<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+          <div class="contents">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, laudantium unde culpa obcaecati, rem ratione, minus atque ex vitae molestiae saepe cumque, delectus? Qui, dicta, quibusdam. Itaque dignissimos illum, provident?</p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <button class="toggle">How do I become a member?<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+          <div class="contents">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ad rem sunt quas omnis ipsa commodi nihil excepturi a illum tempora doloremque amet accusantium temporibus, reprehenderit beatae! Accusamus, amet, iste.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-9 productos-search"></div>
+    </div>
+  </main>
+  
+  @@include("partials/footer.html")
+
+  @@include("partials/modals.html")
+
+  <!-- <a href="#video-whatsapp" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="whatsapp d-none d-lg-block" >
+    <img src="./assets/images/whatsapp.png" alt="" />
+  </a> -->
+  
+  <a href="" class="messenger d-none d-lg-block" >
+    <img class=img-fluid src="./assets/images/messenger.svg" alt="" />
+  </a>
+
+  @@include("partials/scripts.html")
+  
+  <script>
+    let toggles = document.getElementsByClassName("toggle");
+    let contentDiv = document.getElementsByClassName("contents");
+    let icons = document.getElementsByClassName("icon");
+
+    for (let i = 0; i < toggles.length; i++) {
+      toggles[i].addEventListener("click", () => {
+        if (parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight) {
+          contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
+
+          toggles[i].style.color = "#000";
+          icons[i].classList.remove("fa-plus");
+          icons[i].classList.add("fa-minus");
+        } else {
+          contentDiv[i].style.height = "0px";
+          toggles[i].style.color = "#000";
+          icons[i].classList.remove("fa-minus");
+          icons[i].classList.add("fa-plus");
+
+          contentDiv[i].classList.remove("heightActive");
+          contentDiv[i].classList.add("heightActive");
+        }
+
+        for (let j = 0; j < contentDiv.length; j++) {
+          if (j !== i) {
+            contentDiv[j].style.height = 0;
+            toggles[j].style.color = "#000";
+            icons[j].classList.remove("fa-minus");
+            icons[j].classList.add("fa-plus");
+          }
+        }
+      });
+    }
+
+  </script>
+</body>
+</html>
