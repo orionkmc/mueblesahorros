@@ -1396,6 +1396,17 @@ input[type="checkbox"] {
   header .logo-link {
     margin-left: 0; } }
 
+#add-to-cart .modal-dialog {
+  margin: 0.75rem auto;
+  width: 90%;
+  max-width: 400px; }
+  @media (min-width: 768px) {
+    #add-to-cart .modal-dialog {
+      position: fixed;
+      right: 2rem;
+      top: 100px;
+      width: auto; } }
+
 footer .logo-right a:first-child {
   margin-right: 3px; }
 
