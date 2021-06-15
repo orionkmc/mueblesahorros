@@ -1471,6 +1471,18 @@ a.messenger:hover {
       right: 2rem;
       top: 100px;
       width: auto; } }
+  #add-to-cart .modal-dialog img {
+    width: 100%;
+    height: auto; }
+  #add-to-cart .modal-dialog .modal-title {
+    font-size: 1rem; }
+  #add-to-cart .modal-dialog .textos-parrafos {
+    font-size: 0.8rem; }
+  @media (min-width: 360px) {
+    #add-to-cart .modal-dialog .modal-title {
+      font-size: 1.2rem; }
+    #add-to-cart .modal-dialog .textos-parrafos {
+      font-size: 1rem; } }
 
 footer .logo-right a:first-child {
   margin-right: 3px; }
