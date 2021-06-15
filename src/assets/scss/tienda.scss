@@ -1,4 +1,4 @@
-.card-lista {
+.card-mapa {
   width: 40%;
   float: right;
   margin: 1.8rem 0rem 1rem 3rem;
@@ -7,17 +7,17 @@
   color: var(--primary-color);
 }
 @media (max-width: 991.98px) {
-  .card-lista {
+  .card-mapa {
     width: 50%;
   }
 }
 @media (max-width: 767.98px) {
-  .card-lista {
+  .card-mapa {
     width: 100%;
   }
 }
 @media (max-width: 524.98px) {
-  .card-lista {
+  .card-mapa {
     font-size: .8rem;
   }
 }
