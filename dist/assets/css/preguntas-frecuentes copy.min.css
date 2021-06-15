@@ -1,0 +1,2 @@
+.card-lista{width:40%;float:right;margin:1.8rem 0 1rem 3rem;box-shadow:0 0 20px 0 rgba(0,0,0,.25);border-radius:5px}.card-lista ul{list-style:none;margin-bottom:0;padding:2rem;color:var(--primary-color)}.card-lista ul a{color:var(--primary-color);transition:all .5s}.card-lista ul a:hover{font-weight:700}.icon-preg{width:10%}ol{padding-left:1.2rem}@media (max-width:991.98px){.card-lista{width:50%}}@media (max-width:767.98px){.card-lista{width:100%}}@media (max-width:524.98px){.card-lista{font-size:.8rem}}
+/*# sourceMappingURL=preguntas-frecuentes copy.min.css.map */
