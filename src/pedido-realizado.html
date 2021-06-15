@@ -7,21 +7,22 @@
   <div id="overlay" class="overlay" onclick="closeNav()" style="width: 0%; opacity: 0"></div>
 
   @@include("partials/sidenav.html")
-  @@include("partials/navbar.html")
+  @@include("partials/navbar-login.html")
   
   <main class="content pt-4 pb-4">
     
     <div class="text-center pt-5 pb-5" style="color: var(--primary-color);">
       <lord-icon
-        src="assets/images/7-cloud-error-outline.json"
+        src="assets/images/approved-checked-outline.json"
         trigger="loop"
         target="a"
         colors="primary:#324e9e;,secondary:#324e9e;"
         style="width:120px; height:120px;">
       </lord-icon>
-      <h4>Página no encontrada</h4>
-      <p>Vaya... parece que la página que estas buscando no existe.<br>Prueba a intentarlo otra vez.</p>
-      <a href="#" class="btn btn-add">Ir al inicio</a>
+      <h4>¡PEDIDO REALIZADO!</h4>
+      <p>Recibirás un correo con toda la información de tu pedido. <br> Recuerda que puedes seguir el estado del mismo desde tu área de usuario.</p>
+      <a href="#" class="btn btn-add">Seguir comprando</a>
+      
     </div>
     
   </main>
