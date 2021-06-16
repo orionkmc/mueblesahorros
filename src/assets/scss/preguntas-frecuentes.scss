@@ -1,3 +1,6 @@
+.section-preguntas {
+  padding-top: 3rem;
+}
 .card-lista {
   width: 40%;
   float: right;
@@ -13,7 +16,7 @@
 }
 .card-lista ul a {
   color: var(--primary-color);
-  transition: all .5s;
+  transition: all .3s;
 }
 .card-lista ul a:hover {
   font-weight: bold;
@@ -32,7 +35,13 @@ ol {
 @media (max-width: 767.98px) {
   .card-lista {
     width: 100%;
+    margin: 1.8rem 0rem 3rem 3rem;
   }
+}
+@media (max-width: 575.98px) {
+  .section-preguntas {
+    padding-top: .5rem;
+  }  
 }
 @media (max-width: 524.98px) {
   .card-lista {
