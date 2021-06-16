@@ -222,7 +222,7 @@
               <button class="toggle">Precio<i class="fa fa-plus icon" aria-hidden="true"></i></button>
               <div class="contents">
                 <div class="p-3">
-                  <input type="text" id="range_03">
+                  <input type="text" id="range_04">
                 </div>
               </div>
             </div>
@@ -1156,10 +1156,20 @@
       });
     }
   </script>
-  
+
   <script>
     $(document).ready(function () {
       $("#range_03").ionRangeSlider({
+          skin: "flat",
+          type: "double",
+          grid: true,
+          min: 0,
+          max: 1500,
+          from: 25,
+          to: 1200,
+          prefix: "$"
+      });
+      $("#range_04").ionRangeSlider({
           skin: "flat",
           type: "double",
           grid: true,

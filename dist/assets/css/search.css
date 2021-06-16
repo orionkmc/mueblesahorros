@@ -98,4 +98,7 @@
   .filtro-mobile {
     display: block; }
   .filtros-search {
-    display: none; } }
+    display: none; }
+  .productos-search {
+    padding-left: 0;
+    padding-right: 0; } }
