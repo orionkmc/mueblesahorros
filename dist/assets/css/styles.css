@@ -1492,7 +1492,7 @@ a.messenger:hover {
     #add-to-cart .modal-dialog {
       position: fixed;
       right: 2rem;
-      top: 100px;
+      top: 2rem;
       width: auto; } }
   #add-to-cart .modal-dialog img {
     width: 100%;

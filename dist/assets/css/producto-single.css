@@ -9,14 +9,17 @@
   color: var(--primary-color); }
 
 .slider-for {
-  padding: 0 5px; }
+  margin-left: 5px; }
   .slider-for img {
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain; }
 
+.content-slider-nav {
+  margin-left: 1.5px; }
+
 .slider-nav {
-  margin-top: 1rem; }
+  margin-top: 5px; }
   .slider-nav .slick-slide {
     display: flex;
     align-items: center;
