@@ -189,7 +189,7 @@
     </div>
   </header>
   
-  <main class="content container-fluid">
+  <main class="content container-fluid section-search">
     
     <div class="accordion filtro-mobile" id="accordionPanelsStayOpenExample">
       <div class="accordion-item">
@@ -204,14 +204,14 @@
               <button class="toggle">Promociones<i class="fa fa-plus icon" aria-hidden="true"></i></button>
               <div class="contents">
                 <div class="form-check">
-                  <input class="form-check-input check-custom" type="checkbox" value="" id="checkNove">
-                  <label class="form-check-label" for="checkNove">
+                  <input class="form-check-input check-custom" type="checkbox" value="" id="checkNove1">
+                  <label class="form-check-label" for="checkNove1">
                     Novedades
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input check-custom" type="checkbox" value="" id="checkOfer">
-                  <label class="form-check-label" for="checkOfer">
+                  <input class="form-check-input check-custom" type="checkbox" value="" id="checkOfer1">
+                  <label class="form-check-label" for="checkOfer1">
                     Ofertas
                   </label>
                 </div>
@@ -231,20 +231,20 @@
               <button class="toggle">Colores<i class="fa fa-plus icon" aria-hidden="true"></i></button>
               <div class="contents">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="checkBlanco">
-                  <label class="form-check-label" for="checkBlanco">
+                  <input class="form-check-input" type="checkbox" value="" id="checkBlanco1">
+                  <label class="form-check-label" for="checkBlanco1">
                     Blanco
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="checkNegro">
-                  <label class="form-check-label" for="checkNegro">
+                  <input class="form-check-input" type="checkbox" value="" id="checkNegro1">
+                  <label class="form-check-label" for="checkNegro1">
                     Negro
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="checkGris">
-                  <label class="form-check-label" for="checkGris">
+                  <input class="form-check-input" type="checkbox" value="" id="checkGris1">
+                  <label class="form-check-label" for="checkGris1">
                     Gris
                   </label>
                 </div>
@@ -255,8 +255,8 @@
               <button class="toggle">Disponibilidad<i class="fa fa-plus icon" aria-hidden="true"></i></button>
               <div class="contents">
                 <div class="form-check">
-                  <input class="form-check-input check-custom" type="checkbox" value="" id="checkDisp" checked>
-                  <label class="form-check-label" for="checkDisp">
+                  <input class="form-check-input check-custom" type="checkbox" value="" id="checkDisp1" checked>
+                  <label class="form-check-label" for="checkDisp1">
                     Solo en existencia
                   </label>
                 </div>
@@ -1143,15 +1143,6 @@
 
           contentDiv[i].classList.remove("heightActive");
           contentDiv[i].classList.add("heightActive");
-        }
-
-        for (let j = 0; j < contentDiv.length; j++) {
-          if (j !== i) {
-            contentDiv[j].style.height = 0;
-            toggles[j].style.color = "#000";
-            icons[j].classList.remove("fa-minus");
-            icons[j].classList.add("fa-plus");
-          }
         }
       });
     }

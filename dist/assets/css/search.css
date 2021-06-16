@@ -1,14 +1,16 @@
+.section-search {
+  box-shadow: inset 7px 10px 15px 0 rgba(0, 0, 0, 0.06); }
+
 .filtros-search i {
   color: var(--primary-color);
-  display: inline-block; }
+  display: inline-block;
+  box-shadow: 9px 1px 13px -8px rgba(0, 0, 0, 0.75); }
+
+.filtros-search {
+  box-shadow: 9px 1px 13px -8px rgba(0, 0, 0, 0.25); }
 
 .filtro-mobile {
   display: none; }
-
-.productos-search {
-  box-shadow: inset 7px 10px 15px 0 rgba(0, 0, 0, 0.06);
-  padding-left: 3rem;
-  padding-right: 3rem; }
 
 .dropdown-divider {
   height: 0;
