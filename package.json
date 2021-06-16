@@ -29,6 +29,7 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "bootstrap": "^5.0.1",
+    "ion-rangeslider": "^2.3.1",
     "jquery": "^3.6.0",
     "slick-slider": "^1.8.2",
     "wowjs": "^1.1.3"
