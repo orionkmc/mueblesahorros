@@ -649,7 +649,7 @@ header {
   padding: 16px 16px 0 16px;
 }
 .card-title {
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   display: block;
@@ -658,7 +658,7 @@ header {
   text-transform: uppercase;
 }
 .card-color {
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   display: block;
@@ -672,12 +672,12 @@ header {
   color: var(--primary-color);
 }
 .price {
-  font-size: 1rem;
+  font-size: 0.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 .offer {
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   text-decoration: line-through;
@@ -693,7 +693,7 @@ header {
     display: block;
   }
   .price {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .offer {
     margin-left: 0;
@@ -707,18 +707,18 @@ header {
     padding: 0.5rem;
   }
   .offer {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 }
 @media (min-width: 768px) {
   .card-title {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
   .card-color {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
   .price {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .price {
     display: flex;
@@ -730,16 +730,16 @@ header {
 
 @media (min-width: 1200px) {
   .card-title {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
   .card-color {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   .price {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .offer {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   .price {
     display: flex;
