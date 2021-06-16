@@ -1510,6 +1510,12 @@ a.messenger:hover {
 footer .logo-right a:first-child {
   margin-right: 3px; }
 
+footer .logo-left a {
+  margin-right: 3px; }
+
+footer .logo-left a:last-child {
+  margin-right: 3px; }
+
 footer .logo-left a img,
 footer .logo-right a img {
   width: 40px; }
