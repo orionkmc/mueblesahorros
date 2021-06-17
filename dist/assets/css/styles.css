@@ -1323,15 +1323,6 @@ a.messenger:hover {
     max-width: 493px;
     /* margin-top: 146px; */ } }
 
-@media (max-width: 768px) {
-  .messenger {
-    width: 80px;
-    height: 80px;
-    right: 80px; }
-  .whatsapp {
-    width: 80px;
-    height: 80px; } }
-
 .anime-zoom {
   transition: all 0.2s ease-in-out;
   display: inline-block; }
@@ -1437,7 +1428,6 @@ a.messenger:hover {
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  padding: 0.5rem 3rem !important;
   transition: all .5s;
   margin: 0 auto; }
   @media (max-width: 359.98px) {

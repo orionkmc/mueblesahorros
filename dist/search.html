@@ -270,71 +270,73 @@
     
     <div class="row">
       <div class="col-12 col-lg-3 pt-5 filtros-search">
-        <i class="fa fa-sliders" aria-hidden="true" style="font-size: 1.5rem;"></i><span style="margin-left: 1.3rem;" class="textos-parrafos">FILTROS</span>
-        <div class="dropdown-divider"></div>
-        <div class="wrapper">
-          <button class="toggle">Promociones<i class="fa fa-plus icon" aria-hidden="true"></i></button>
-          <div class="contents">
-            <div class="form-check">
-              <input class="form-check-input check-custom" type="checkbox" value="" id="checkNove">
-              <label class="form-check-label" for="checkNove">
-                Novedades
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input check-custom" type="checkbox" value="" id="checkOfer">
-              <label class="form-check-label" for="checkOfer">
-                Ofertas
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="dropdown-divider"></div>
-        <div class="wrapper">
-          <button class="toggle">Precio<i class="fa fa-plus icon" aria-hidden="true"></i></button>
-          <div class="contents">
-            <div class="p-3">
-              <input type="text" id="range_03">
+        <div class="content-filtros">
+          <i class="fa fa-sliders" aria-hidden="true" style="font-size: 1.5rem;"></i><span style="margin-left: 1.3rem;" class="textos-parrafos">FILTROS</span>
+          <div class="dropdown-divider"></div>
+          <div class="wrapper">
+            <button class="toggle">Promociones<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+            <div class="contents">
+              <div class="form-check">
+                <input class="form-check-input check-custom" type="checkbox" value="" id="checkNove">
+                <label class="form-check-label" for="checkNove">
+                  Novedades
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input check-custom" type="checkbox" value="" id="checkOfer">
+                <label class="form-check-label" for="checkOfer">
+                  Ofertas
+                </label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="dropdown-divider"></div>
-        <div class="wrapper">
-          <button class="toggle">Colores<i class="fa fa-plus icon" aria-hidden="true"></i></button>
-          <div class="contents">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="checkBlanco">
-              <label class="form-check-label" for="checkBlanco">
-                Blanco
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="checkNegro">
-              <label class="form-check-label" for="checkNegro">
-                Negro
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="checkGris">
-              <label class="form-check-label" for="checkGris">
-                Gris
-              </label>
+          <div class="dropdown-divider"></div>
+          <div class="wrapper">
+            <button class="toggle">Precio<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+            <div class="contents">
+              <div class="p-3">
+                <input type="text" id="range_03">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="dropdown-divider"></div>
-        <div class="wrapper">
-          <button class="toggle">Disponibilidad<i class="fa fa-plus icon" aria-hidden="true"></i></button>
-          <div class="contents">
-            <div class="form-check">
-              <input class="form-check-input check-custom" type="checkbox" value="" id="checkDisp" checked>
-              <label class="form-check-label" for="checkDisp">
-                Solo en existencia
-              </label>
+          <div class="dropdown-divider"></div>
+          <div class="wrapper">
+            <button class="toggle">Colores<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+            <div class="contents">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkBlanco">
+                <label class="form-check-label" for="checkBlanco">
+                  Blanco
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkNegro">
+                <label class="form-check-label" for="checkNegro">
+                  Negro
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkGris">
+                <label class="form-check-label" for="checkGris">
+                  Gris
+                </label>
+              </div>
             </div>
           </div>
+          <div class="dropdown-divider"></div>
+          <div class="wrapper">
+            <button class="toggle">Disponibilidad<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+            <div class="contents">
+              <div class="form-check">
+                <input class="form-check-input check-custom" type="checkbox" value="" id="checkDisp" checked>
+                <label class="form-check-label" for="checkDisp">
+                  Solo en existencia
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
         </div>
-        <div class="dropdown-divider"></div>
       </div>
       <div class="col-12 col-lg-9 pt-5 productos-search">
         <nav aria-label="breadcrumb">
@@ -349,7 +351,7 @@
             <p class="textos-parrafos text-articulo">67 artículos</p>
           </div>
           <div class="col-12 col-lg-6 select-search">
-            <select class="form-select select-rounded" style="font-size: .8rem; padding: .5rem 1rem;" aria-label="Default select example">
+            <select class="form-select select-rounded" style="font-size: .8rem; width: 300px; text-align-last: center;" aria-label="Default select example">
               <option value="1" selected>Top ventas </option>
               <option value="2">Precio: de más barato a más caro</option>
               <option value="2">Precio: de más caro a más barato</option>
@@ -1154,6 +1156,14 @@
     </div>
   </footer>
 
+  <!-- <a href="#video-whatsapp" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="whatsapp d-none d-lg-block" >
+    <img src="./assets/images/whatsapp.png" alt="" />
+  </a> -->
+
+  <a href="" class="messenger" >
+    <img class=img-fluid src="./assets/images/messenger.svg" alt="" />
+  </a>
+
   <div id="login" id="login" class="modal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
@@ -1521,14 +1531,6 @@
       </div>
     </div>
   </div>
-
-  <!-- <a href="#video-whatsapp" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="whatsapp d-none d-lg-block" >
-    <img src="./assets/images/whatsapp.png" alt="" />
-  </a> -->
-  
-  <a href="" class="messenger d-none d-lg-block" >
-    <img class=img-fluid src="./assets/images/messenger.svg" alt="" />
-  </a>
 
   <script src="assets/libs/jquery/jquery.min.js"></script>
   <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>

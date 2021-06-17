@@ -1,6 +1,10 @@
 .section-search {
   box-shadow: inset 7px 10px 15px 0 rgba(0, 0, 0, 0.06); }
 
+.content-filtros {
+  position: sticky;
+  top: 145px; }
+
 .filtros-search i {
   color: var(--primary-color);
   display: inline-block; }
@@ -16,7 +20,10 @@
   box-shadow: 9px 1px 13px -8px rgba(0, 0, 0, 0.25); }
 
 .filtro-mobile {
-  display: none; }
+  display: none;
+  position: sticky;
+  top: 148px;
+  z-index: 1; }
 
 .dropdown-divider {
   height: 0;

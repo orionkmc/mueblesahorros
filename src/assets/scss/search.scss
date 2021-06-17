@@ -1,6 +1,10 @@
 .section-search {
 	box-shadow: inset 7px 10px 15px 0 rgba($color: #000000, $alpha: 0.06);
 }
+.content-filtros {
+	position: sticky;
+	top: 145px;
+}
 .filtros-search i {
 	color: var(--primary-color);
 	display: inline-block;
@@ -10,19 +14,22 @@
 }
 .productos-col {
 	padding-left: 1.5rem;
-  padding-right: 1.5rem;
+	padding-right: 1.5rem;
 }
 .filtros-search {
 	box-shadow: 9px 1px 13px -8px rgba($color: #000000, $alpha: 0.25);
 }
 .filtro-mobile {
 	display: none;
+	position: sticky;
+	top: 148px;
+	z-index: 1;
 }
 .dropdown-divider {
-  height: 0;
-  margin: 1rem 0;
-  overflow: hidden;
-  border-top: 1px solid #e9ecef;
+	height: 0;
+	margin: 1rem 0;
+	overflow: hidden;
+	border-top: 1px solid #e9ecef;
 }
 .wrapper {
 	color: var(--primary-color);
@@ -80,13 +87,13 @@
 #checkBlanco1 + label:before,
 #checkNegro1 + label:before,
 #checkGris1 + label:before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  float: left;
-  margin: 1px 0.5em 0 0;
-  border: 1px solid var(--primary-color);
-  border-radius: 10px;
+	content: "";
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 1px 0.5em 0 0;
+	border: 1px solid var(--primary-color);
+	border-radius: 10px;
 }
 #checkBlanco:checked+label:before,
 #checkNegro:checked+label:before,
@@ -94,7 +101,7 @@
 #checkBlanco1:checked+label:before,
 #checkNegro1:checked+label:before,
 #checkGris1:checked+label:before {
-  border: 3px solid var(--primary-color);
+	border: 3px solid var(--primary-color);
 }
 #checkBlanco,
 #checkNegro,
@@ -102,19 +109,19 @@
 #checkBlanco1,
 #checkNegro1,
 #checkGris1 {
-  display: none;
+	display: none;
 }
 #checkBlanco + label:before,
 #checkBlanco1 + label:before {
-  background: #fff;
+	background: #fff;
 }
 #checkNegro + label:before,
 #checkNegro1 + label:before {
-  background: #000;
+	background: #000;
 }
 #checkGris + label:before,
 #checkGris1 + label:before {
-  background: gray;
+	background: gray;
 }
 .accordion-item {
 	border: none !important
@@ -131,7 +138,7 @@
 	margin: 0;
 }
 @media (max-width: 991.98px) {
-  .filtro-mobile {
+	.filtro-mobile {
 		display: block;
 	}
 	.filtros-search {
