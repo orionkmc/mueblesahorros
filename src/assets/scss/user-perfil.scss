@@ -33,7 +33,7 @@
       }
       a {
         color: var(--primary-color);
-        transition: all .5s;
+        transition: all .3s;
         &:hover {
           font-weight: bold;
         }
@@ -64,4 +64,9 @@
       border-bottom: 1px solid var(--primary-color);
     }
   }
+}
+@media (max-width: 575.98px) {
+  .section-pedidos {
+    padding-top: 1.5rem;
+  }  
 }

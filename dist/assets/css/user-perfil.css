@@ -36,7 +36,7 @@
         padding: 2rem; } }
     #user-perfil .card-lista ul a {
       color: var(--primary-color);
-      transition: all .5s; }
+      transition: all .3s; }
       #user-perfil .card-lista ul a:hover {
         font-weight: bold; }
   #user-perfil .card-lista .icon {
@@ -59,3 +59,7 @@
     white-space: nowrap; }
   #user-perfil table th, #user-perfil table td {
     border-bottom: 1px solid var(--primary-color); }
+
+@media (max-width: 575.98px) {
+  .section-pedidos {
+    padding-top: 1.5rem; } }
