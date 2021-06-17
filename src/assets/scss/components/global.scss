@@ -771,7 +771,7 @@ header {
   font-size: 1rem;
   font-weight: 600;
   padding: 10px 32px;
-  transition: all 0.5s;
+  transition: all;
 }
 
 .btn-add:hover {
@@ -1144,7 +1144,7 @@ footer .footer-link a:hover {
   opacity: 1;
   visibility: visible;
   /* transform: translate(0, -5px); */
-  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  transition: all cubic-bezier(0.75, -0.02, 0.2, 0.97);
 }
 .popover__message {
   text-align: center;
