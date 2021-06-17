@@ -1,13 +1,3 @@
-.breadcrumb {
-  padding: 0 5px; }
-  @media (max-width: 399.98px) {
-    .breadcrumb {
-      font-size: 0.8rem; } }
-
-.breadcrumb-item,
-.breadcrumb-item::before {
-  color: var(--primary-color); }
-
 .slider-for {
   margin-left: 5px; }
   .slider-for img {
@@ -23,7 +13,6 @@
   .slider-nav .slick-slide {
     display: flex;
     align-items: center;
-    height: 10vh;
     margin: 0 5px; }
     .slider-nav .slick-slide img {
       width: 100%;
@@ -47,18 +36,16 @@
     height: 2rem;
     right: -40px; }
 
-.price {
-  font-size: 1.5rem; }
-  .price span {
-    margin-left: 2rem;
-    font-size: 1rem;
-    font-weight: 300;
-    align-items: center; }
-    @media (min-width: 768px) {
-      .price span {
-        display: flex; } }
-  .price span.badge {
-    border-radius: 0; }
+.price span {
+  margin-left: 2rem;
+  font-weight: 300;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .price span {
+      display: flex; } }
+
+.price span.badge {
+  border-radius: 0; }
 
 input#cantidad {
   text-align: center;
@@ -80,7 +67,8 @@ input#cantidad::-webkit-inner-spin-button {
   border-radius: 50px;
   border: none;
   background-color: #eee;
-  color: var(--primary-color); }
+  color: var(--primary-color);
+  font-size: 0.8rem; }
 
 .art-disp {
   color: #00cc51; }
@@ -115,17 +103,28 @@ input#cantidad::-webkit-inner-spin-button {
 
 .slider-vistos .slick-slide {
   padding: 0 1.5rem; }
+  @media (max-width: 600px) {
+    .slider-vistos .slick-slide {
+      padding: 0 0.5rem; } }
 
 .slider-vistos .slick-prev {
   background-image: url(../images/back-blue.svg);
   background-size: cover;
   background-position: center;
   width: 2rem;
-  height: 2rem; }
+  height: 2rem;
+  opacity: 0.5;
+  transition: all 0.3s; }
 
 .slider-vistos .slick-next {
   background-image: url(../images/next-blue.svg);
   background-size: cover;
   background-position: center;
   width: 2rem;
-  height: 2rem; }
+  height: 2rem;
+  opacity: 0.5;
+  transition: all 0.3s; }
+
+.slider-vistos .slick-prev:hover,
+.slider-vistos .slick-next:hover {
+  opacity: 1; }

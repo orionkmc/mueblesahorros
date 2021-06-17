@@ -54,17 +54,22 @@ button:focus {
   background: #fff;
   border-radius: 3px;
 }
+.check-custom + label {
+  position: relative;
+}
 .check-custom:checked+label:after {
+  position: absolute;
   content: "";
-  width: 14px;
-  height: 7px;
-  border: 4px solid var(--primary-color);
+  width: 20px;
+  height: 20px;
   float: left;
-  margin-left: -24px;
-  border-right: 0;
-  border-top: 0;
-  margin-top: 7px;
-  transform: rotate(-55deg);
+  margin: 1px .5em 0 0;
+  background: #fff;
+  border-radius: 3px;
+  background: url(http://localhost:3000/assets/images/CHECK.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
 }
 .check-custom {
   display: none;
@@ -89,10 +94,22 @@ button:focus {
     box-shadow: none;
     border-color: var(--primary-color);;
   }
-  &:hover {
-    background-color: var(--primary-color);
-    color: #fff;
+}
+.breadcrumb {
+  padding: 0 5px;
+  @media (max-width: 399.98px) {
+    font-size: 0.8rem;
   }
+  a {
+    color: var(--primary-color);
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+.breadcrumb-item,
+.breadcrumb-item::before {
+  color: var(--primary-color);
 }
 .sidenav {
   width: 0;
@@ -605,7 +622,10 @@ header {
 }
 
 .off-default {
-  display: none;
+  // display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .card {
@@ -663,7 +683,7 @@ header {
 .card-price {
   display: flex;
   margin-top: 10px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   color: var(--primary-color);
 }
 .price {
@@ -764,7 +784,10 @@ header {
 }
 
 .card:hover .off-default {
-  display: block;
+  // display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 .card:hover .card-price {
   margin-bottom: 20px;
@@ -1670,10 +1693,7 @@ a.messenger:hover {
   &:focus {
     outline: none;
     box-shadow: none;
-  }
-  &:hover {
-    background-color: var(--primary-color);
-    color: #fff;
+    border-color: var(--primary-color) !important;
   }
 }
 .page-prev img,
