@@ -36,16 +36,22 @@
     height: 2rem;
     right: -40px; }
 
-.price span {
-  margin-left: 2rem;
-  font-weight: 300;
-  align-items: center; }
+.price {
+  font-size: 1.2rem; }
   @media (min-width: 768px) {
-    .price span {
-      display: flex; } }
-
-.price span.badge {
-  border-radius: 0; }
+    .price {
+      font-size: 1.2rem; } }
+  .price span {
+    font-size: 1rem;
+    margin-left: 2rem;
+    font-weight: 300;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .price span {
+        display: flex;
+        font-size: 1rem; } }
+  .price span.badge {
+    border-radius: 0; }
 
 input#cantidad {
   text-align: center;
