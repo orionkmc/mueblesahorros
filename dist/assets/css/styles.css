@@ -653,7 +653,7 @@ header {
   .card-color {
     font-size: 0.7rem; }
   .price {
-    font-size: 0.8rem; }
+    font-size: 1rem; }
   .offer {
     font-size: 0.7rem; }
   .price {
@@ -1437,7 +1437,7 @@ a.messenger:hover {
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 3rem !important;
   transition: all .5s;
   margin: 0 auto; }
   @media (max-width: 359.98px) {

@@ -3,11 +3,14 @@
 
 .filtros-search i {
   color: var(--primary-color);
-  display: inline-block;
-  box-shadow: 9px 1px 13px -8px rgba(0, 0, 0, 0.75); }
+  display: inline-block; }
 
 .productos-search {
   padding-left: var(--bs-gutter-x, 0.75rem); }
+
+.productos-col {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
 
 .filtros-search {
   box-shadow: 9px 1px 13px -8px rgba(0, 0, 0, 0.25); }
@@ -65,7 +68,10 @@
 
 #checkBlanco + label:before,
 #checkNegro + label:before,
-#checkGris + label:before {
+#checkGris + label:before,
+#checkBlanco1 + label:before,
+#checkNegro1 + label:before,
+#checkGris1 + label:before {
   content: "";
   width: 20px;
   height: 20px;
@@ -76,21 +82,30 @@
 
 #checkBlanco:checked + label:before,
 #checkNegro:checked + label:before,
-#checkGris:checked + label:before {
+#checkGris:checked + label:before,
+#checkBlanco1:checked + label:before,
+#checkNegro1:checked + label:before,
+#checkGris1:checked + label:before {
   border: 3px solid var(--primary-color); }
 
 #checkBlanco,
 #checkNegro,
-#checkGris {
+#checkGris,
+#checkBlanco1,
+#checkNegro1,
+#checkGris1 {
   display: none; }
 
-#checkBlanco + label:before {
+#checkBlanco + label:before,
+#checkBlanco1 + label:before {
   background: #fff; }
 
-#checkNegro + label:before {
+#checkNegro + label:before,
+#checkNegro1 + label:before {
   background: #000; }
 
-#checkGris + label:before {
+#checkGris + label:before,
+#checkGris1 + label:before {
   background: gray; }
 
 .accordion-item {
@@ -127,3 +142,6 @@
 .accordion-button:not(.collapsed)::after {
   transform: none !important;
   background-image: url("../images/angle_up.svg"); }
+
+.text-articulo {
+  padding-left: 5px; }
