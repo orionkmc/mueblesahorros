@@ -1,0 +1,102 @@
+.box {
+  box-shadow: 0px 0px 20px 0px rgba($color: #000000, $alpha: 0.25);
+  border-radius: 5px;
+  .content-btn {
+    max-width: 190px;
+    margin: 0 auto;
+  }
+  .products {
+    .price {
+      font-weight: normal;
+      .badge {
+        font-size: 0.8rem;
+      }
+    }
+    input.cantidad {
+      text-align: center;
+      border: none;
+      background: transparent;
+      margin: 0 0.5rem;
+      color: var(--primary-color);
+      font-size: 1rem;
+      width: 35px;
+      @media (max-width: 500px) {
+        margin: 0;
+      }
+    }
+    input.cantidad:focus-visible {
+      outline: none;
+    }
+    input.cantidad::-webkit-outer-spin-button,
+    input.cantidad::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    .mas, .menos {
+      border-radius: 50px;
+      border: none;
+      background-color: #eee;
+      color: var(--primary-color);
+      font-size: 0.8rem;
+    }
+    .delete {
+      img {
+        width: 1.2rem;
+      }
+    }
+    .price-total {
+      p {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .form-cupon {
+    display: block;
+    text-align: center;
+    @media (min-width: 500px) {
+      display: flex;
+      #cupon {
+        margin-right: 2rem;
+      }
+    }
+  }
+  .input-custom {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    &::placeholder {
+      color: var(--primary-color);
+      font-weight: 400;
+    }
+    &:focus-visible {
+      outline: none;
+    }
+    @media (max-width: 320px) {
+      font-size: 0.8rem;
+    }
+  }
+  .title-textos {
+    font-size: 1.2rem;
+  }
+  .form-check .form-check-input {
+    margin-left: 0;
+    margin-right: 1rem;
+    &:checked {
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%231f3165'/%3e%3c/svg%3e");
+    }
+    &:checked[type=radio] {
+    }
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .form-check-input[type=radio] {
+    border-color: var(--primary-color);
+  }
+}
