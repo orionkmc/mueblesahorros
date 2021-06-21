@@ -35,11 +35,12 @@ $(document).ready(function() {
   $('#validar-cupon').click(function() {
     if ($('#cupon').val() == '1234') {
       $('#result-cupon').text('¡Cupón válido!')
-      $('#result-cupon').css('color', 'var(--primary-color)')
+      $('#result-cupon').css({'color': 'var(--primary-color)', 'margin-top': '1rem'})
       $('#monto-cupon').html('-5&euro;')
+      $('#monto-cupon').css({'margin-top': '1rem'})
     } else {
       $('#result-cupon').text('Este cupón no existe')
-      $('#result-cupon').css('color', 'red')
+      $('#result-cupon').css({'color': 'red', 'margin-top': '1rem'})
       $('#monto-cupon').text('')
     }
   })

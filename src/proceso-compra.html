@@ -29,10 +29,10 @@
         </div>
       </div>
       <div class="col-12 col-xl-5 mt-4 mt-xl-0">
-        <h5 class="title-textos mb-4">CARRITO (<span id="nro-productos">3</span>)</h5>
+        <h5 class="title-textos mb-4 mt-4 mt-xl-0">CARRITO (<span id="nro-productos">3</span>)</h5>
         <div class="box p-3">
-          <p class="textos-parrafos mb-4 text-center">Articulo eleminado del carrito</p>
-          <p class="textos-parrafos mb-4 text-center">Deshacer</p>
+          <p class="textos-parrafos text-center">Artículo eliminado del carrito</p>
+          <p class="textos-parrafos text-center">Deshacer</p>
           <hr>
           <div class="products">
             <div class="row text-start px-3 pb-3">
@@ -41,7 +41,8 @@
               </div>
               <div class="col-9 col-sm-5 px-2 border-bottom-products">
                 <p class="textos-parrafos">Sofá Chaise Longue modelo Tokio con 2 almohadas</p>
-                <p class="textos-parrafos price mb-0">499&euro; <span class="px-1"><del>899&euro;</del></span> <span class="badge bg-red">-25%</span></p>
+                <p class="textos-parrafos price mb-0">499&euro;<span class="badge bg-red ms-3">-25%</span></p>
+                <span class="price-old"><del>899&euro;</del></span> 
               </div>
               <div class="col-12 col-sm-5 px-2 mt-3 mt-sm-0">
                 <div class="d-flex justify-content-between justify-content-sm-end">
@@ -74,7 +75,8 @@
               </div>
               <div class="col-9 col-sm-5 px-2 border-bottom-products">
                 <p class="textos-parrafos">Sofá Chaise Longue modelo Tokio con 2 almohadas</p>
-                <p class="textos-parrafos price">499&euro; <span class="px-1"><del>899&euro;</del></span> <span class="badge bg-red">-25%</span></p>
+                <p class="textos-parrafos price mb-0">499&euro;<span class="badge bg-red ms-3">-25%</span></p>
+                <span class="price-old"><del>899&euro;</del></span> 
               </div>
               <div class="col-12 col-sm-5 px-2 mt-3 mt-sm-0">
                 <div class="d-flex justify-content-between justify-content-sm-end">
@@ -108,15 +110,15 @@
           <div id="content-cupon" class="px-3">
             <h6 class="title-textos mb-3">Cupón</h6>
             <div class="form-cupon">
-                <input type="text" class="input-custom" id="cupon" placeholder="Introduce el cupón">
-                <button id="validar-cupon" class="btn btn-add mb-3">Validar</button>
+              <input type="text" class="input-custom" id="cupon" placeholder="Introduce el cupón">
+              <button id="validar-cupon" class="btn btn-add">Validar</button>
             </div>
             <div class="d-flex justify-content-between">
-              <p id="result-cupon" class="textos-parrafos"></p>
-              <p id="monto-cupon" class="title-textos"></p>
+              <p id="result-cupon" class="textos-parrafos mb-0"></p>
+              <p id="monto-cupon" class="title-textos mb-0"></p>
             </div>
           </div>
-          <hr>
+          <hr class="">
           <div id="content-total" class="px-3">
             <div class="d-flex justify-content-between">
               <h6 class="title-textos">Total</h6>
