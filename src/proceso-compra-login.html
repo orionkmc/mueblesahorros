@@ -86,7 +86,7 @@
                 </p>
                 <div class="row">
                   <div class="col-12 col-md-6">
-                    <select id="envioDireccion" class="select-rect form-select mb-3">
+                    <select id="envioDireccion" class="select-rect form-select mb-3" disabled>
                       <option value="0"" selected>Envío a pie de calle</option>
                       <option value="1">Piso 1</option>
                       <option value="2">Piso 2</option>
@@ -106,10 +106,10 @@
                 </p>
                 <div class="row">
                   <div class="col-12 col-md-5">
-                    <select id="envioIsla" class="select-rect form-select mb-3 mb-md-0"></select>
+                    <select id="envioIsla" class="select-rect form-select mb-3 mb-md-0" disabled></select>
                   </div>
                   <div class="col-12 col-md-7">
-                    <select id="envioMunicipio" class="select-rect form-select"></select>
+                    <select id="envioMunicipio" class="select-rect form-select" disabled></select>
                   </div>
                 </div>
               </div>
@@ -210,9 +210,13 @@
           </div>
           <div id="content-envio" class="px-3">
             <h6 class="title-textos mb-3">Envío</h6>
-            <div id="tipo-envio" class="d-flex justify-content-between">
-              <p id="result-envio" class="textos-parrafos">Por determinar</p>
-              <p id="monto-envio" class="title-textos"></p>
+            <div id="tipo-envio">
+              <div class="row">
+                <div class="col d-flex justify-content-between">
+                  <p id="result-envio" class="textos-parrafos m-0">Por determinar</p>
+                  <p id="monto-envio" class="title-textos m-0"></p>
+                </div>
+              </div>
             </div>
           </div>
           <hr>
@@ -234,6 +238,10 @@
               <h6 id="total-compra" class="title-textos">15.980&euro;</h6>
             </div>
             <p class="textos-parrafos fst-italic">Impuestos incluidos</p>
+            <div class="d-flex justify-content-between">
+              <p class="textos-parrafos">Al finalizar, se te enviará la factura al correo electrónico.</p>
+              <button id="comprar" class="btn btn-add mb-3">Comprar</button>
+            </div>
           </div>
         </div>
       </div>

@@ -44,6 +44,7 @@ $(document).ready(function() {
     }
   })
 
+  let envioDireccion = $('#envioDireccion');
   let envioIsla = $('#envioIsla');
   let envioMunicipio = $('#envioMunicipio');
   let listaIslas = [
@@ -91,23 +92,97 @@ $(document).ready(function() {
 
   mostrarLugares(listaIslas, envioIsla)
   mostrarLugares(listaMunicipiosGC, envioMunicipio)
+
+  function valorIsla() {
+    let valor = envioIsla.val()
+    if (valor !== 'Gran Canaria') {
+      mostrarLugares(listaMunicipioOtros, envioMunicipio)
+      tipoEnvio.html(textEnvioNoDisponible)
+    } else {
+      mostrarLugares(listaMunicipiosGC, envioMunicipio)
+      tipoEnvio.html(textEnvioDomicilio)
+    }
+  }
   
   envioIsla.change(function() {
-    let valor = envioIsla.val()
-    if (valor == 'Gran Canaria') {
-      mostrarLugares(listaMunicipiosGC, envioMunicipio)
-    } else {
-      mostrarLugares(listaMunicipioOtros, envioMunicipio)
-    }
+    valorIsla()
   })
 
+  let costoEnvio = 100
+  let initCostoPiso = 4
+  
+  function calcCostoEnvio() {
+    let valorDireccion = parseInt($(envioDireccion).val())
+    let addCostoEnvio = 0
+    if (valorDireccion >= initCostoPiso) {
+      addCostoEnvio = (valorDireccion - (initCostoPiso - 1)) * 5
+    }
+    totalCostoEnvio = (costoEnvio + addCostoEnvio)
+  }  
+  calcCostoEnvio()
+
   let tipoEnvio = $('#tipo-envio')
+  let textEnvioDomicilio
+  let textEnvioTienda
+  let textEnvioNoDisponible
+  function textHTML() {
+    textEnvioDomicilio = 
+      '<div class="row">' +
+        '<div class="col d-flex justify-content-between">' +
+          '<p id="result-envio" class="textos-parrafos m-0">Envío a domicilio</p>' +
+          '<p id="monto-envio" class="title-textos m-0">' + totalCostoEnvio + '&euro;</p>' +
+        '</div>' +
+      '</div>' +
+      '<div class="row">' +
+        '<div class="col d-flex justify-content-between">' +
+          '<p id="text-plazo-envio" class="textos-parrafos m-0">Plazo de entrega</p>' +
+          '<p id="plazo-envio" class="textos-parrafos m-0">Apróx. 3 semanas</p>' +
+        '</div>' +
+      '</div>'
+      
+    textEnvioTienda = 
+      '<div class="row">' +
+        '<div class="col d-flex justify-content-between">' +
+          '<p id="result-envio" class="textos-parrafos m-0">Recogida en tienda</p>' +
+          '<p id="monto-envio" class="title-textos m-0">Gratis</p>' +
+        '</div>' +
+      '</div>'
+
+    textEnvioNoDisponible = 
+      '<div class="row">' +
+        '<div class="col d-flex justify-content-between">' +
+          '<p id="result-envio" class="textos-parrafos m-0">' +
+            'No hay envíos disponibles para su dirección.' +
+            '<br><br>' +
+            'Por favor contacte con nuestro soporte para solicitar un presupuesto de envio.' +
+            '<br><br>' +
+            'Teléfono fijo: <a href="tel:+34928257098"><strong>+34 928 25 70 98</strong></a>' +
+            '<br>' +
+            'Móvil / Whatsapp:: <a href="tel:+34657803567"><strong>+34 657 80 35 67</strong></a>' +
+          '</p>' +
+        '</div>' +
+      '</div>'
+  }
+  textHTML()
+
+  envioDireccion.change(function() {
+    calcCostoEnvio()
+    textHTML()
+    tipoEnvio.html(textEnvioDomicilio)
+  })
 
   $('#tipoEnvioDomicilio, #tipoEnvioTienda').change(function() {
     if ($('#tipoEnvioDomicilio').is(':checked')) {
-      tipoEnvio.html('<p id="result-envio" class="textos-parrafos">Domicilio</p><p id="monto-envio" class="title-textos">Pago</p>')
+      tipoEnvio.html(textEnvioDomicilio)
+      envioDireccion.prop('disabled', false)
+      envioIsla.prop('disabled', false)
+      envioMunicipio.prop('disabled', false)
+      valorIsla()
     } else if ($('#tipoEnvioTienda').is(':checked')) {
-      tipoEnvio.html('<p id="result-envio" class="textos-parrafos">Tienda</p><p id="monto-envio" class="title-textos">Gratis</p>')
+      tipoEnvio.html(textEnvioTienda)
+      envioDireccion.prop('disabled', true)
+      envioIsla.prop('disabled', true)
+      envioMunicipio.prop('disabled', true)
     }
   })
 

@@ -78,3 +78,6 @@
       box-shadow: none; }
   .box .form-check-input[type=radio] {
     border-color: var(--primary-color); }
+  .box select:disabled {
+    background-color: transparent;
+    opacity: 0.5; }
