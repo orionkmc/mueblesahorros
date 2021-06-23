@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  @@include("partials/head.html")
+
+  <link rel="stylesheet" href="assets/libs/slick-slider/slick/slick.css"/>
+  <link rel="stylesheet" href="assets/libs/slick-slider/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="assets/css/producto-single.min.css">
+</head>
+<body>
+  <div id="overlay" class="overlay" onclick="closeNav()" style="width: 0%; opacity: 0"></div>
+
+  @@include("partials/sidenav.html")
+  @@include("partials/navbar-signin.html")
+  
+  <main class="content container pt-5 pb-4">
+    
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="">Inicio</a></li>
+        <li class="breadcrumb-item"><a href="">Categoria</a></li>
+        <li class="breadcrumb-item"><a href="">Subcategoria</a></li>
+        <li class="breadcrumb-item"><a href="">Producto</a></li>
+      </ol>
+    </nav>
+
+    <div class="row">
+      <div class="col-12 col-md-5">
+        <div class="slider-for">
+          <div><img src="./assets/images/mueble2.png" alt=""></div>
+          <div><img src="./assets/images/mueble3.png" alt=""></div>
+          <div><img src="./assets/images/mueble2.png" alt=""></div>
+          <div><img src="./assets/images/mueble2.png" alt=""></div>
+          <div><img src="./assets/images/product-sillon.png" alt=""></div>
+          <div><img src="./assets/images/mueble2.png" alt=""></div>
+        </div>
+        <div class="content-slider-nav">
+          <div class="slider-nav">
+            <div><img src="./assets/images/mueble2.png" alt=""></div>
+            <div><img src="./assets/images/mueble3.png" alt=""></div>
+            <div><img src="./assets/images/mueble2.png" alt=""></div>
+            <div><img src="./assets/images/mueble2.png" alt=""></div>
+            <div><img src="./assets/images/product-sillon.png" alt=""></div>
+            <div><img src="./assets/images/mueble2.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-7">
+        <h5 class="title-textos mt-3 mt-md-0">CHAISE LONGUE SUPER PRECIO <br class="d-md-none"> (2 Cojines Decorativos Opcionales)</h5>
+        <p class="textos-parrafos">Ref. 00000A</p>
+        <h2 class="title-textos price">499&euro; <span><del>899&euro;</del></span> <span class="badge bg-red">-25%</span></h2>
+        <hr>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p class="title-textos mb-3">Color:</p>
+            <select class="select-rect form-select mb-3 mb-md-0" aria-label="Default select example">
+              <option value="1"" selected>Celeste Perlado</option>
+              <option value="2">Blanco</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-6">
+            <p class="title-textos mb-3">Medidas:</p>
+            <select class="select-rect form-select mb-3 mb-md-0" aria-label="Default select example">
+              <option value="1"" selected>00 x 000 x 00</option>
+              <option value="2">10 x 100 x 10</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mt-md-3">
+          <div class="col-12">
+            <p class="title-textos mb-3">Cantidad:</p>
+            <button id="menos">
+              <span class="fa fa-minus"></span>
+            </button>
+            <input type="number" name="cantidad" id="cantidad" min="1" max="100" step="1" value="1">
+            <button id="mas">
+              <span class="fa fa-plus"></span>
+            </button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <p class="textos-parrafos mb-0"><span class="art-disp me-2 fa fa-circle"></span>Artículo disponible</p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="d-block d-sm-flex">
+            <a href="" class="btn btn-add mt-3 me-sm-2">Comprar</a>
+            <a href="#add-to-cart" class="btn btn-add mt-3 ms-sm-2" data-bs-toggle="modal" role="button">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3 mt-md-5 d-flex">
+      <div class="contenedor-title">
+        <div class="title-description">
+          <p class="title-textos me-3">DESCRIPCIÓN</p>
+        </div>
+        <div class="line">
+          <hr>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 pe-md-4">
+        <p class="textos-parrafos">Nos gusta escuchar a nuestros clientes y que nos digen les necesidades que tienen a la hora de amueblar su casa. Muchos nos demandeben une chaise longue que no fuese demasiado grande para poder adaptarla en un salón o en un cuarto de estar de pequeñas dimensiones, pues ya la tenemos para que puedes empezar a disfrutarla lo antes posible.</p>
+        <p class="textos-parrafos">Las tres caracteristicas principales de este modelo de sofé chaise longue son su económico precio, sus medidas reducidas y su tejido repelente a los líquidos de color gris A continuación te vamos a hacer una pequeña descripción de este sensacional modelo de chaise longue que estamos seguro va a ser de tu agrado</p>
+        <p class="textos-parrafos">Tiene una medida total de 187 cm de ancho x 145 cm de fondo y 87 cm de alto, una ventaja muy importante a tener en cuenta es que es reversible, con esto queremos decir que el lado largo donde estiramos las piernas se puede poner tanto al lado dere cho como al lado izquierdo ¿Cómo? Muy sencillo, solamente tienes que mover el puff suelto de 67 cm de ancho x 59 cm de fondo y dar la vuelta al asiento de la chaise longue y ponerlo al otro lado ya que viene tapizado por ambas caras</p>
+        <p class="textos-parrafos">Se compone de dos asientos cortos de 49 cm de ancho x 50 cm de fondo útil y de un asiento largo de 59 cm x 110 cm de fondo para poder estar con las piemas estiradas comodamente. Cada asiento tiene una altura de 11 cm y en su interior lleva espuma de 25 kg de densidad. La altura del suelo a los asientos es de 40 cm. Sus tres respaldos sueltos tienen una altura de 55 cm y son totalmente desenfundables al igual que los asientos para que se puedan lavar las fundas en la lavadora</p>
+        <p class="textos-parrafos">Los 2 brazos rectos en la parte delantera tienen una medida de 18 cm de ancho x 58 cm de alto x 83 cm de fondo y van atornillados a la estructura del sofá chaise longueya viene montado de fábrica para que no tengas que hacer absolutamente nada, es llegar a tu domicilio y empezar a disfrutarlo</p>
+        <p class="textos-parrafos">Aunque es un modelo de chaise longue muy económica, no hemos querido escati mar esfuerzos y hemos decidido tapizarla en un tejido de color gris de una gran call dad repelente de liquidos y que el 95% de las manchas se eliminan con una colada Es una tela fresca en verano y cálida en invierno con una sensación muy agradable al tacto compuesta por algodón ecológico y por una base de poliéster que aumenta la resistencia</p>
+        <p class="textos-parrafos">Si dispones de más espacio en to salón, puedes poner el sofá chaise longue modelo Tokio (194001 con el puff partido en una medida de 220 cm con caracteristicas muy similares al modelo que estás viendo en estos momentos Tenemos la solución que necesitas para que tu salón quede amueblado sin necesidad de hacer un gran des embolso economico El momento es ahora!!</p>
+        <p class="title-textos">MATERIALES, COLORES Y ACABADO</p>
+        <p class="textos-parrafos">Estructura de madera de pino con placas de alta resistencia, bastidores de cincha</p>
+      </div>
+      <div class="col-12 col-md-6 ps-md-4">
+        <p class="title-textos">MEDIDA TOTAL (Cm)</p>
+        <p class="textos-parrafos">Alto 87 x Ancho 187 x Fondo 145</p>
+        <p class="title-textos">BULTOS</p>
+        <p class="textos-parrafos">2</p>
+        <p class="title-textos">GARANTÍA</p>
+        <p class="textos-parrafos">Este producto tiene 2 años de garantia para cualquier defecto de fabricación. La garantia no incluye los defectos que se originen por el mal uso del producto</p>
+        <p class="title-textos">FABRICADO</p>
+        <p class="textos-parrafos">Producto fabricado en Europa utilizando materiales de alta calidad y maquinaria de última generación, obedeciendo a los controles estándares de calidad y garantia Europeos</p>
+        <p class="title-textos">ENVÍO Y MONTAJE</p>
+        <p class="textos-parrafos">Este sofá chaise longue se sirve embalado en plástico reforzado para evitar golpes y rozaduras. Se envía ya montado de fábrica</p>
+        <p class="title-textos">CARACTERÍSTICAS</p>
+        <p class="textos-parrafos">
+          Reversible, vale para derecha e izquierda <br>
+          Tapizado en tela de color gris <br>
+          Desenfundable <br>
+          Bastidor con cinchas Nea <br>
+          Densidad de asiento 25kg Patas PVC de color negro <br>
+        </p>
+        <p class="title-textos">GARANTÍA</p>
+        <p class="textos-parrafos">
+          Este producto tiene 2 años de garantia para cualquier defecto de fabricación <br>
+          La garantia no incluye los defectos que se originen por el mal uso del producto.
+        </p>
+        <p class="title-textos">FABRICADO</p>
+        <p class="textos-parrafos">Producto fabricado en Europa utilizando materiales de alta calidad y maquinaria de última generación, obedeciendo a los controles estándares de calidad y garantia Europeos</p>
+        <p class="title-textos">ENVÍO Y MONTAJE</p>
+        <p class="textos-parrafos">Este sofá chaise longue se sirve embalado en plástico reforzado para evitar golpes y rozaduras. Se envía ya montado de fábrica</p>
+      </div>
+    </div>
+
+    <hr class="hr-divisor">
+
+    <h4 class="title-textos mt-5">Otros usuarios tambien vieron</h4>
+
+    <div class="slider-vistos">
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <a href="producto-single.html">
+              <div class="card my-5">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price mb-3">
+                    <span class="price"><span class="ms-0">1.299€ - 1.499€</span></span>
+                    <span class="offer">1.199€</span>
+              
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <a href="producto-single.html">
+              <div class="card my-5">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price mb-3">
+                    <span class="price"><span class="ms-0">1.299€ - 1.499€</span></span>
+                    <span class="offer">1.199€</span>
+              
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <a href="producto-single.html">
+              <div class="card my-5">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price mb-3">
+                    <span class="price"><span class="ms-0">1.299€ - 1.499€</span></span>
+                    <span class="offer">1.199€</span>
+              
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <a href="producto-single.html">
+              <div class="card my-5">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price mb-3">
+                    <span class="price"><span class="ms-0">1.299€ - 1.499€</span></span>
+                    <span class="offer">1.199€</span>
+              
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <a href="producto-single.html">
+              <div class="card my-5">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price mb-3">
+                    <span class="price"><span class="ms-0">1.299€ - 1.499€</span></span>
+                    <span class="offer">1.199€</span>
+              
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <a href="producto-single.html">
+              <div class="card my-5">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price mb-3">
+                    <span class="price"><span class="ms-0">1.299€ - 1.499€</span></span>
+                    <span class="offer">1.199€</span>
+              
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <a href="producto-single.html">
+              <div class="card my-5">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price mb-3">
+                    <span class="price"><span class="ms-0">1.299€ - 1.499€</span></span>
+                    <span class="offer">1.199€</span>
+              
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <a href="producto-single.html">
+              <div class="card my-5">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price mb-3">
+                    <span class="price"><span class="ms-0">1.299€ - 1.499€</span></span>
+                    <span class="offer">1.199€</span>
+              
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <a href="producto-single.html">
+              <div class="card my-5">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price mb-3">
+                    <span class="price"><span class="ms-0">1.299€ - 1.499€</span></span>
+                    <span class="offer">1.199€</span>
+              
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <a href="producto-single.html">
+              <div class="card my-5">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price mb-3">
+                    <span class="price"><span class="ms-0">1.299€ - 1.499€</span></span>
+                    <span class="offer">1.199€</span>
+              
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <a href="producto-single.html">
+              <div class="card my-5">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price mb-3">
+                    <span class="price"><span class="ms-0">1.299€ - 1.499€</span></span>
+                    <span class="offer">1.199€</span>
+              
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <a href="producto-single.html">
+              <div class="card my-5">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price mb-3">
+                    <span class="price"><span class="ms-0">1.299€ - 1.499€</span></span>
+                    <span class="offer">1.199€</span>
+              
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  
+  @@include("partials/footer.html")
+
+  @@include("partials/modals.html")
+
+  @@include("partials/scripts.html")
+  <script src="assets/libs/slick-slider/slick/slick.min.js"></script>
+  <script>
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      focusOnSelect: true,
+      infinite: false,
+    });
+    $('.slider-vistos').slick({
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      dots: false,
+      infinite: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
+      ]
+    });
+
+    let cantidad = $('#cantidad');
+    let min = parseInt(cantidad.attr('min'));
+    let max = parseInt(cantidad.attr('max'));
+    $('#mas, #menos').click("on", function(e) {
+      e.preventDefault();
+      let current_value = parseInt(cantidad.val());
+      let classname = $(this).attr("id");
+      if (classname === "menos") {
+        if (current_value == min) {
+          return;
+        } else {
+          cantidad.val(current_value - 1);
+        }
+      } else {
+        if (current_value == max) {
+          return;
+        } else {
+          cantidad.val(current_value + 1);
+        }
+      }
+    })
+    cantidad.change(function() {
+      if (parseInt(cantidad.val()) < min) {
+        cantidad.val(min)
+      } else if (parseInt(cantidad.val()) > max) {
+        cantidad.val(max)
+      }
+    })
+    widthSliderFor = $('.slider-for img').width()
+    $('.slider-for img').css('height', widthSliderFor)
+    $(window).resize(function () {
+      widthSliderFor = $('.slider-for img').width()
+      $('.slider-for img').css('height', widthSliderFor)
+    })
+  </script>
+  
+</body>
+</html>

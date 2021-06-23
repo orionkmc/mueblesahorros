@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  @@include("partials/head.html")
+
+  <link rel="stylesheet" href="assets/css/search.min.css">
+  <!-- ION Slider -->
+  <link href="assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="overlay" class="overlay" onclick="closeNav()" style="width: 0%; opacity: 0"></div>
+
+  @@include("partials/sidenav.html")
+  @@include("partials/navbar-signin.html")
+  
+  <main class="content container-fluid section-search">
+    
+    <div class="accordion filtro-mobile" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            <i class="fa fa-sliders" aria-hidden="true" style="font-size: 1.5rem;"></i><span style="margin-left: 1.3rem;" class="textos-parrafos">FILTROS</span>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            <div class="wrapper">
+              <button class="toggle">Promociones<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+              <div class="contents">
+                <div class="form-check">
+                  <input class="form-check-input check-custom" type="checkbox" value="" id="checkNove1">
+                  <label class="form-check-label" for="checkNove1">
+                    Novedades
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input check-custom" type="checkbox" value="" id="checkOfer1">
+                  <label class="form-check-label" for="checkOfer1">
+                    Ofertas
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="wrapper">
+              <button class="toggle">Precio<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+              <div class="contents">
+                <div class="p-3">
+                  <input type="text" id="range_04">
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="wrapper">
+              <button class="toggle">Colores<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+              <div class="contents">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkBlanco1">
+                  <label class="form-check-label" for="checkBlanco1">
+                    Blanco
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkNegro1">
+                  <label class="form-check-label" for="checkNegro1">
+                    Negro
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkGris1">
+                  <label class="form-check-label" for="checkGris1">
+                    Gris
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="wrapper">
+              <button class="toggle">Disponibilidad<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+              <div class="contents">
+                <div class="form-check">
+                  <input class="form-check-input check-custom" type="checkbox" value="" id="checkDisp1" checked>
+                  <label class="form-check-label" for="checkDisp1">
+                    Solo en existencia
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-divider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12 col-lg-3 pt-5 filtros-search">
+        <div class="content-filtros">
+          <i class="fa fa-sliders" aria-hidden="true" style="font-size: 1.5rem;"></i><span style="margin-left: 1.3rem;" class="textos-parrafos">FILTROS</span>
+          <div class="dropdown-divider"></div>
+          <div class="wrapper">
+            <button class="toggle">Promociones<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+            <div class="contents">
+              <div class="form-check">
+                <input class="form-check-input check-custom" type="checkbox" value="" id="checkNove">
+                <label class="form-check-label" for="checkNove">
+                  Novedades
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input check-custom" type="checkbox" value="" id="checkOfer">
+                <label class="form-check-label" for="checkOfer">
+                  Ofertas
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="wrapper">
+            <button class="toggle">Precio<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+            <div class="contents">
+              <div class="p-3">
+                <input type="text" id="range_03">
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="wrapper">
+            <button class="toggle">Colores<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+            <div class="contents">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkBlanco">
+                <label class="form-check-label" for="checkBlanco">
+                  Blanco
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkNegro">
+                <label class="form-check-label" for="checkNegro">
+                  Negro
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkGris">
+                <label class="form-check-label" for="checkGris">
+                  Gris
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="wrapper">
+            <button class="toggle">Disponibilidad<i class="fa fa-plus icon" aria-hidden="true"></i></button>
+            <div class="contents">
+              <div class="form-check">
+                <input class="form-check-input check-custom" type="checkbox" value="" id="checkDisp" checked>
+                <label class="form-check-label" for="checkDisp">
+                  Solo en existencia
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-9 pt-5 productos-search">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="">Categoria</a></li>
+            <li class="breadcrumb-item"><a href="">Subcategoria</a></li>
+          </ol>
+        </nav>
+        <div class="row pt-3">
+          <div class="col-12 col-lg-6">
+            <p class="textos-parrafos text-articulo">67 artículos</p>
+          </div>
+          <div class="col-12 col-lg-6 select-search">
+            <select class="form-select select-rounded" style="font-size: .8rem; width: 300px; text-align-last: center;" aria-label="Default select example">
+              <option value="1" selected>Top ventas </option>
+              <option value="2">Precio: de más barato a más caro</option>
+              <option value="2">Precio: de más caro a más barato</option>
+            </select>
+          </div>
+        </div>
+        <div class="row pt-5 productos-col">
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <a href="producto-single.html">
+              <div class="card wow zoomIn">
+                <span class="badge bg-red">-20%</span>
+                <img class="card-img-top" src="./assets/images/product-sillon.png" alt="" />
+                
+                <div class="card-body">
+                  <h5 class="card-title">SOFÁ CHAISE LONGUE</h5>
+                  <span class="card-color">Gris | Blanco</span>
+                  <div class="card-price">
+                    <span class="price"
+                    ><span>1.299€ - 1.499€</span></span
+                    >
+                    <span class="offer">1.199€</span>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#add-to-cart" data-bs-toggle="modal" role="button" class="btn btn-add off-default">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row mt-3" style="padding-bottom: 50px;">
+          <div class="col-12 text-center">
+            <a class="page-prev me-3" href=""><img src="./assets/images/back-blue.svg" alt=""></a>
+            <select class="form-select select-rounded" aria-label="Default select example">
+              <option value="1"" selected>Página 1 de 2</option>
+              <option value="2">Página 2 de 2</option>
+            </select>
+            <a class="page-next ms-3" href=""><img src="./assets/images/next-blue.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  @@include("partials/footer.html", {"marginFooter": "style='margin-top: -45px;'"})
+
+  @@include("partials/modals.html")
+
+  @@include("partials/scripts.html")
+
+  <script>
+    let toggles = document.getElementsByClassName("toggle");
+    let contentDiv = document.getElementsByClassName("contents");
+    let icons = document.getElementsByClassName("icon");
+
+    for (let i = 0; i < toggles.length; i++) {
+      toggles[i].addEventListener("click", () => {
+        if (parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight) {
+          contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
+
+          toggles[i].style.color = "#000";
+          icons[i].classList.remove("fa-plus");
+          icons[i].classList.add("fa-minus");
+        } else {
+          contentDiv[i].style.height = "0px";
+          toggles[i].style.color = "#000";
+          icons[i].classList.remove("fa-minus");
+          icons[i].classList.add("fa-plus");
+
+          contentDiv[i].classList.remove("heightActive");
+          contentDiv[i].classList.add("heightActive");
+        }
+      });
+    }
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $("#range_03").ionRangeSlider({
+          skin: "flat",
+          type: "double",
+          grid: true,
+          min: 0,
+          max: 1500,
+          from: 25,
+          to: 1200,
+          prettify_separator: ".",
+          postfix: "€"
+      });
+      $("#range_04").ionRangeSlider({
+          skin: "flat",
+          type: "double",
+          grid: true,
+          min: 0,
+          max: 1500,
+          from: 25,
+          to: 1200,
+          prettify_separator: ".",
+          postfix: "€"
+      });
+    });
+  </script>
+  <!-- Ion Range Slider-->
+  <script src="assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+</body>
+</html>

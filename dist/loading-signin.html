@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muebles + Ahorro</title>
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/libs/animate.css/animate.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.min.css">
+
+</head>
+<body>
+  <div id="overlay" class="overlay" onclick="closeNav()" style="width: 0%; opacity: 0"></div>
+
+  <div id="sideNav" class="sidenav">
+    <button type="button" class="btn-close closebtn" onclick="closeNav()" style="font-size: inherit"></button>
+  
+    <div class="text-center mb-3">
+      <img class="logo-xs" src="./assets/images/logo.svg" alt="" />
+    </div>
+  
+    <ul>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/sofas.svg" alt="" /> Sofas
+        </a>
+        <ul>
+          <li><a href="#">Sofás chaise longue</a></li>
+          <li><a href="#">Sofás y conjuntos</a></li>
+          <li><a href="#">Sillones orejeros</a></li>
+          <li><a href="#">Sillones relax</a></li>
+          <li><a href="#">Sofás cama</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/colchones-canapes.svg" alt="" />
+          Colchones y Canapés
+        </a>
+        <ul>
+          <li><a href="#">Pack de canapé y colchón</a></li>
+          <li><a href="#">Colchones viscoelásticos</a></li>
+          <li><a href="#">Colchones de muelles ensacados</a></li>
+          <li><a href="#">Canapés</a></li>
+          <li><a href="#">Bases tapizadas</a></li>
+          <li><a href="#">Somieres</a></li>
+          <li><a href="#">Almohadas</a></li>
+          <li><a href="#">Textil hogar</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/salones.svg" alt="" />
+          Salones
+        </a>
+        <ul>
+          <li><a href="#">Muebles de sala</a></li>
+          <li><a href="#">Sofás y conjuntos</a></li>
+          <li><a href="#">Sillones orejeros</a></li>
+          <li><a href="#">Sillones relax</a></li>
+          <li><a href="#">Sofás cama</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/mesas-sillas.svg" alt="" />
+          Mesas y Sillas
+        </a>
+        <ul>
+          <li><a href="#">Mesas de comedor</a></li>
+          <li><a href="#">Mesas de centro</a></li>
+          <li><a href="#">Mesas de cocina</a></li>
+          <li><a href="#">Conjunto mesas y sillas</a></li>
+          <li><a href="#">Sillas de Comedor</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/dormitorios-juveniles.svg" alt="" />
+          Dormitorios Juveniles
+        </a>
+        <ul>
+          <li><a href="#">Dormitorios juveniles</a></li>
+          <li><a href="#">Camas</a></li>
+          <li><a href="#">Armarios juveniles</a></li>
+          <li><a href="#">Mesas de estudio y estanterías</a></li>
+          <li><a href="#">Mesitas</a></li>
+          <li><a href="#">Cómodas</a></li>
+          <li><a href="#">Cabeceros</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/dormitorios-matrimoniales.svg" alt="" />
+          Dormitorios Matrimoniales
+        </a>
+        <ul>
+          <li><a href="#">Dormitorios matrimonio</a></li>
+          <li><a href="#">Sinfonieres</a></li>
+          <li><a href="#">Espejos</a></li>
+          <li><a href="#">Armarios matrimonio</a></li>
+          <li><a href="#">Mesitas</a></li>
+          <li><a href="#">Cómodas</a></li>
+          <li><a href="#">Cabeceros</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/armarios-zapateros.svg" alt="" />
+          Armarios y Zapateros
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/oficina-en-casa.svg" alt="" />
+          Oficina en casa
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/exclusive.svg" alt="" />
+          Exclusive
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/outlet.svg" alt="" />
+          <span class="badge bg-red">OUTLET</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <header class="">
+    <div class="main-header" style="width: 100%;">
+      <div class="row">
+        <div class="col-7 col-sm-6 col-md-5 col-xl-4 col-xxl-4 main-header-left">
+          <div class="main-header-logo">
+            <button class="navbar-toggler" type="button" onclick="openNav()">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="logo-link" href="index.html">
+              <img class="logo-big img-fluid" src="./assets/images/logo.svg"/>
+              <img class="logo-small img-fluid" src="./assets/images/logo-mobile.svg"/>
+            </a>
+          </div>
+        </div>
+      
+        <div class="col-5 col-sm-6 col-md-7 col-xl-8 col-xxl-8 main-header-right">
+          <div class="bg-search-mobile"></div>
+          <div class="input-group search">
+            <input type="text" class="form-control" placeholder="¿Qué producto estás buscando?" />
+            <button type="button" class="q">
+              <img class="img-fluid" src="./assets/images/custom-icon/search.svg" alt="" />
+            </button>
+          </div>
+        
+          <ul class="main-link">
+            <li class="popover__wrapper">
+              <a class="anime-zoom" href="user-perfil.html">
+                <img class="popover__title" src="./assets/images/custom-icon/user.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a class="cart anime-zoom" href="javascript:void(0)">
+                <span class="badge bg-red">99</span>
+                <img src="./assets/images/custom-icon/cart.svg" alt=""/>
+              </a>
+            </li>
+            <li class="d-none d-md-block"><a href="javascript:void(0)">Tienda</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main class="content">
+    
+    <div class="content-loading d-flex align-items-center justify-content-center">
+      <lord-icon src="./assets/images/loading.json" trigger="loop" target="a" colors="primary:#203165;,secondary:#8195d1;" style="width:20vh; height:20vh;"></lord-icon>
+    </div>
+    
+  </main>
+  
+
+  <script src="assets/libs/jquery/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/libs/wowjs/wow.min.js"></script>
+  <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       0,          // default
+      mobile:       true,       // default
+      live:         true        // default
+    })
+    wow.init();
+  </script>
+  
+</body>
+</html>

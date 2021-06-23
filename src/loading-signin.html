@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  @@include("partials/head.html")
+
+</head>
+<body>
+  <div id="overlay" class="overlay" onclick="closeNav()" style="width: 0%; opacity: 0"></div>
+
+  @@include("partials/sidenav.html")
+  @@include("partials/navbar-signin.html")
+  
+  <main class="content">
+    
+    <div class="content-loading d-flex align-items-center justify-content-center">
+      <lord-icon src="./assets/images/loading.json" trigger="loop" target="a" colors="primary:#203165;,secondary:#8195d1;" style="width:20vh; height:20vh;"></lord-icon>
+    </div>
+    
+  </main>
+  
+
+  @@include("partials/scripts.html")
+  
+</body>
+</html>

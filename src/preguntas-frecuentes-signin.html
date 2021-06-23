@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  @@include("partials/head.html")
+
+  <link rel="stylesheet" href="assets/css/preguntas-frecuentes.min.css">
+</head>
+<body>
+  <div id="overlay" class="overlay" onclick="closeNav()" style="width: 0%; opacity: 0"></div>
+
+  @@include("partials/sidenav.html")
+  @@include("partials/navbar-signin.html")
+  
+  <main class="content container section-preguntas pb-4">
+
+    <div class="card-lista">
+      <ul>
+        <li>
+          <a href="#"><img class="icon-preg" src="./assets/images/icon-preg-frec/bag.svg" alt="bag" />Devoluciones</a>
+        </li>
+        <li>
+          <a href="#"><img class="icon-preg" src="./assets/images/icon-preg-frec/track.svg" alt="envio" />Envío y plazos de entrega</a>
+        </li>
+        <li>
+          <a href="#"><img class="icon-preg" src="./assets/images/icon-preg-frec/tarjetas.svg" alt="tarjetas" />Formas de pago</a>
+        </li>
+        <li>
+          <a href="#"><img class="icon-preg" src="./assets/images/icon-preg-frec/financ.svg" alt="financiacion" />Financiación</a>
+        </li>
+        <li>
+          <a href="#"><img class="icon-preg" src="./assets/images/icon-preg-frec/preg-frec.svg" alt="preguntas" /><strong>Preguntas frecuentes</strong></a>
+        </li>
+        <li>
+          <a href="#"><img class="icon-preg" src="./assets/images/icon-preg-frec/cookies.svg" alt="cookies" />Cookies</a>
+        </li>
+        <li>
+          <a href="#"><img class="icon-preg" src="./assets/images/icon-preg-frec/perfil.svg" alt="politica" />Política de privacidad</a>
+        </li>
+        <li>
+          <a href="#"><img class="icon-preg" src="./assets/images/icon-preg-frec/aviso.svg" alt="aviso" />Aviso legal y Términos y Condiciones</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="pt-4">
+      <p class="title-textos col-preg">PREGUNTAS FRECUENTES</p>
+      <p class="title-textos">MI PEDIDO</p>
+      <p class="title-textos">¿Cuándo recibiré mi pedido?</p>
+      <p class="textos-parrafos">El tiempo de entrega del pedido figura en la página de compra final y en los correos sucesivos que se te mandarán como seguimiento del pedido. Una vez que el pedido haya slaido de nuestros almacenes y la mercancia esté en la delegación correspondiente, la agencia de transporte correspondiente se pondrá en contacto contigo para concretar una fecha de entrega, se acordará la fecha y hora de la entrega por ambas partes.</p>
+      <br>
+      <p class="title-textos">Seguir el estado de mi pedido en tiempo real</p>
+      <p class="textos-parrafos">En la parte superior derecha de la página web, a la izquierda del carrito, hay un icono con una persona "ver mi cuenta de cliente", pinchando ahí te deriva el historial de pedidos, donde se podrán ver todos los detalles de tu pedido. Ahorro Total te informará puntualmente a través de email de la situación real del estado del pedido.</p>
+      <p class="textos-parrafos">El seguimiento del pedido funciona de la siguiente manera:</p>
+      <ol class="textos-parrafos">
+        <li>Pago aceptado. Llega un email verificando que el pago está aceptado.</li>
+        <li>Pedido confirmado. Un segundo email confirmando de que el pedido está todo correcto.</li>
+        <li>Preparación en curso. Pasadas unas horas después del pedido confirmado, Ahorro Total gestiona el pedido enviando un tercer email informando de la situación del pedido.</li>
+        <li>En Agencia de reparto. Por último, recibirás un email en el momento en que la agencia de transporte recoja el pedido en nuestras instalaciones.</li>
+      </ol>
+      <br>
+      <p class="title-textos">¿Puedo modificar algún dato o producto una vez hecho el pedido?</p>
+      <p class="textos-parrafos">Si deseas hacer cualquier modificación en tu pedido, ya sea de datos de envío, corrección de algún dato, o entorno al producto como medidas, colores, posición, etc., tendrías que hacerlo con la mayor brevedad posible llamándonos al teléfono 91 813 35 04 de lunes a viernes de 9:30 a 15:00 horas ininterrumpidamente o enviarnos un correo electrónico a <a href="mailto:tiendaonline@ahorrototal.com">tiendaonline@ahorrototal.com</a> indicando tu número de pedido y especificando claramente el cambio que quieres hacer. En caso de que el trámite haya seguido su curso normal y la mercancia haya salido de nuestros almacenes ya no se podría hacer ninguna modificación. Te recomendamos revisar tu pedido y los correos que se te mandan inmediatamente después de hacer el pedido para así comprobar de que todo está correcto.</p>
+      <br>
+      <p class="title-textos">Quiero recibir factura</p>
+      <p class="textos-parrafos">Nos puedes solicitar la factura de compra de tu pedido mandando un email a <a href="mailto:tiendaonline@ahorrototal.com">tiendaonline@ahorrototal.com</a> y te la mandaremos por correo electrónico a los datos indicados a la hora de hacer tu pedido. Si quieres modificar algún dato de la factura nos tendrías que mandar un nuevo email solicitando dicha modificación con los nuevos datos siempre y cuando el pedido no se haya facturado. Una vez que el pedido ya esté facturado no podremos hacer ningún cambio.</p>
+      <br>
+      <p class="title-textos">MI CUENTA</p>
+      <p class="title-textos">Quiero modificar datos de mi cuenta</p>
+      <p class="textos-parrafos">En el caso que el cambio de dirección de entrega sea a una población diferente a la que puso en el pedido y la gencia ya ha recogido su pedido de nuestros almancenes, supondría un gasto extra que correría por cuenta del cliente.</p>
+      <br>
+      <p class="title-textos">He olvidado mi contraseña</p>
+      <p class="textos-parrafos">¡No te preocupes! Siempre podrás recuperar tu contraseña. En el inicio de la web en la parte superior derecha, pincha en el botón Mi cuenta y ahí pincha en ¿Olvidaste tu contraseña? t epedirá insertar de nuevo tu correo electrónico y en poco tiempo se te enviará una nueva contraseña a tu correo electrónico.</p>
+      <br>
+      <p class="title-textos">¿Mis datos están protegidos? Protección de datos</p>
+      <p class="textos-parrafos">Sí, por supuesto, cumplimos todos los controles sobre seguridad y confidencialidad que existen en vigor para poder garantizar la seguridad en la transferencia de datos, protección de datos, archivos, y la compra. Nuestra página es 100% segura.</p>
+      <p class="textos-parrafos">Disponemos del certificado SSL (Secure Sockets Layer) que garantiza una conexión segura en la información privada, números de tarjetas de crédito y contraseñas.</p>
+      <p class="textos-parrafos">Tus datos personales serán tratados y/o transferidos de acuerdo con las leyes de protección de datos aplicables y con los registros de protección de datos de Ahorro Total. Te informamos de la posibilidad de ejercitar los correspondientes derechos de acceso, rectificación, cancelación y oposición de conformidad con lo establecido con lo dispuesto en la Ley Orgánica 15/1999, de 13 de Diciembre, de Protección de Datos de Carácter Personal.</p>
+      <br>
+      <p class="title-textos">PROCESO DE COMPRA</p>
+      <p class="title-textos">¿Cómo comprar?</p>
+      <p class="textos-parrafos">Comprar tus muebles online en Ahorro Total es muy fácil, rápido y sobre todo seguro, sólo te llevará 2 únicos pasos:</p>
+      <p class="textos-parrafos">Rellenar tus datos. Revisa que todo esté correcto en tu pedido, si deseas dejar un comentario en pedido puedes hacerlo en el panel que se muestra justo debajo de "Método de envio". Registrate rellenando tus datos personales junto con la dirección en donde quieres que entreguemos tu pedido. Cuando te hayas cerciorado de que esté todo correcto, acepta las condiciones generales y pincha el botón naranja de "Comprar Ahora" de la parte inferior derecha de esa página.</p>
+      <p class="textos-parrafos">Finaliza tu compra. Una vez rellenado tus datos personales y haber pinchado en el botón "Comprar ahora" se te abrirá la pasarela correspondiente para hacer el pago.</p>
+      <p class="textos-parrafos">Pagar con Bizum, se abrirá la pasarela de pago oficial de Bizum.</p>
+      <p class="textos-parrafos">En el caso de elegir pagar con tarjeta se te abrirá la pasarela de pago para insertar los datos de la tarjeta y finalizar el pago.</p>
+      <p class="textos-parrafos">Si eliges la forma de pago financiación SeQura, se abrirá las diversas opciones de fraccionar el pago para que elijas que más te convenga.</p>
+      <p class="textos-parrafos">En el caso de elegir el método de pago de Transferencia bancaria, al pinchar se acepta automáticamente el pedido y se te abrirá una página explicando los datos bancarios a los que tendrás que hacer el ingreso.</p>
+      <p class="textos-parrafos">Pagar con PayPal, se abrirá la pasarela de pago oficial de PayPal.</p>
+      <p class="textos-parrafos">En todos los casos, al finalizar la compra, se te irá informando puntualmente del estado de tu pedido a través del correo electrónico y además podrás ver el proceso de compra en detalle pinchando aquí.</p>
+      <br>
+      <p class="title-textos">El carrito ¿Cómo funciona? ¿Cómo veo lo que llevo metido en el carrito?</p>
+      <p class="textos-parrafos">El carrito se encuentra en la parte superior derecha del encabezado de la página web. Ahí se almacenan los productos que has ido añadiendo para proceder a su posterior compra. Al pinchar, te lleva a la página de compra final, allí te muestra el importe de cada producto, el precio del transporte de los mismos y el precio final de todo el pedido.</p>
+      <p class="textos-parrafos">Este carrito lo puedes modificar cuantas veces quieras antes de aceptar las condiciones de compra y dar a comprar ahora. Una vez hecho esto y quieres realizar algún cambio o modificación en tu pedido, tendrías que ponerte en contacto con nosotros bien llamando al teléfono de atención al cliente 91 813 35 04 o mandando un correo electrónico a <a href="mailto:tiendaonline@ahorrototal.com">tiendaonline@ahorrototal.com</a> indicándonos tu número de pedido. Cualquier modificación se puede hacer siempre y cuando la mercancía no haya salido de nuestros almacenes.</p>
+      <br>
+      <p class="title-textos">PRODUCTOS</p>
+      <p class="title-textos">¿Cómo ver toda la información del producto en la página web?</p>
+      <p class="textos-parrafos">Disponemos de amplia información de cada producto en nuestra página web, pincha en el producto que desees y se abrirá la ficha con su información. En la mera pantalla aparecen las caracteristicas principales y la información de compra del producto. Si te desplazas más abajo podrás ver su ficha técnica, en esta ficha podrás encontrar datos como la descripción completa, características y funcionalidades, medidas de todas sus partes, detalles y acabados, variedad de fotos del producto, recomendaciones para combinar, valoraciones de los clientes, instrucciones de montaje en pdfy videos explicativos, etc. Si necesitas más información acerca de cualquier producto, o dudes en ponerte en contacto con nosotros.</p>
+      <br>
+      <p class="title-textos">¿Cómo saber todo lo que incluye el producto?</p>
+      <p class="textos-parrafos">En el titulo principal de la ficha del producto o en su defecto en la descripción de la ficha, viene detallado todo lo que compone el producto. Hay artículos opcionales que no están incluidos en el precio. Los somieres, canapés, almohadas, bases tapizadas, artículos de decoración y atrezzo no están incluidos dentro del precio de los productos salvo indicación expresa.</p>
+      <br>
+      <p class="title-textos">¿Los productos de la tienda online son los mismos que en la tienda física?</p>
+      <p class="textos-parrafos">Si, los productos de la tienda online y de la tienda física son los mismos, aunque las ofertas son distintas.</p>
+      <p class="textos-parrafos">En las tiendas físicas disponemos de catálogos de productos muy variados y a precios de todo tipo además de productos de exposición en tienda que pueden no mostrarse en la página web. Todos los precios y ofertas que se muestran en la página web son exclusivamente para venta online. Si quieres saber si el producto que te interesa lo tienen en tienda física, tendrías que contactar directamente con la tienda que más te interese (por correo electrónico o teléfono) para que te puedan informar de los precios y plazos de entrega. En las categorías de la web existen apartados con muebles "A la carta", estos apartados son catálogos de productos para venta exclusiva en tiendas Ahorro Total. Para contactar con las tiendas físicas pincha <a href="tienda.html">aquí.</a></p>
+      <br>
+      <p class="title-textos">Ver las instrucciones de montaje del producto</p>
+      <p class="textos-parrafos">Todos nuestros productos que van en kit vienen con instrucciones de montaje y en caso de los sofás o canapés abatibles dentro de la página web se puede ver un video demostrativo del montaje con los pasos a seguir. Este video lo puedes ver dentro de cada ficha en cualquier chaise longue o canapé abatible.</p>
+      <br>
+      <p class="title-textos">¿Todos los productos tienen el IVA incluido?</p>
+      <p class="textos-parrafos">Si, Todos los productos de la página web tienen el IVA incluido.</p>
+      <br>
+      <p class="title-textos">¿Hay servicio de montaje del producto?</p>
+      <p class="textos-parrafos">Si, en donde venga reflejada la opción de montaje, como por ejemplo los canapés. El servicio de montaje también se puede solicitar comprando en nuestras tiendas físicas en muchos más productos, Acércate a tu tienda más cercana y te informaremos de los productos que disponen de servicio de montaje. Los muebles que van en Kit no tienen servicio de montaje.</p>
+      <br>
+      <p class="title-textos">GARANTÍAS Y VENTAJAS</p>
+      <p class="title-textos">¿Qué garantía tienen los productos?</p>
+      <p class="textos-parrafos">- En caso de producto defectuoso, Ahorro Total deberá proceder, según corresponda, a la reparación, sustitución, rebaja del precio o resolución del contrato, gestiones que serán gratuitas para el consumidor y usuario</p>
+      <p class="textos-parrafos">- Ahorro Total responde de las faltas de conformidad que se manifiesten en un plazo de dos años desde la entrega</p>
+      <p class="textos-parrafos">- El consumidor y usuario deberá informar a Ahorro Total de la falta de conformidad en el plazo de dos meses desde que tuvo conocimiento de ella.</p>
+      <br>
+      <p class="title-textos">¿Qué cubre la garantía de los productos?</p>
+      <p class="textos-parrafos">Conforme a lo establecido en el Ley 23/2003, de 10 de julio, de Garantía en la Venta de Bienes de Consumo, todos los artículos objeto de este contrato se encuentran, con carácter general, garantizados ante cualquier defecto de fabricación o disconformidad con las cualidades que se especificar en el contrato, durante un plazo de dos años contados desde la fecha de la recepción de cada uno de ellas reconociéndose al cliente su derecho a la reparación del artículo objeto al contrato, así como a su sustitución, a la rebaja del precio y a la resolución del contrato, resultando, en su caso, la reparación y la sustitución del artículo gratuitas para el consumidor.</p>
+      <p class="textos-parrafos">No se incluyen las deficiencias ocasionadas por negligencias, golpes, uso o manipulación indebida, instalación incorrecta no efectuada por e servicio técnico autorizado Ahorro Total o materiales sometidos a desgaste por su uso normal.</p>
+      <p class="textos-parrafos">En aquellas incidencias que justifiquen el uso de la garantía, se optará por la reparación, sustitución del articulo, rebaja o devolución, en los términos legalmente establecidos. La garantía perderá su valor si se modifican, alteran o sustituyen algunos de los datos de la misma o del justificante de compra.</p>
+      <br>
+      <p class="title-textos">Grandes ventajas ¿Por qué comprar online en Ahorro Total y no en otros sitios?</p>
+      <p class="textos-parrafos">Tenemos el Mejor precio online de todo el mercado, compruébalo tú mismo. Nadie vende más barato!</p>
+      <p class="textos-parrafos">Envío rápido, disponemos de cientos de productos en stock con entrega inmediata.</p>
+      <p class="textos-parrafos">Página 100% segura y proceso de compra fácil, rápido y sobretodo seguro.</p>
+      <p class="textos-parrafos">Productos de diseño exclusivo Ahorro Total y de fabricación española.</p>
+      <p class="textos-parrafos">Garantia de calidad y clientes satisfechos Todos los productos Ahorro Total estan diseñados y fabricados con la maxima garantia de calidad y seguridad, además tienen una garantia de 2 años.</p>
+      <p class="textos-parrafos">Llevamos más de 25 años de experiencia en el sector con miles de clientes satisfechos.</p>
+      <p class="textos-parrafoscontador con">Amplia información de cada producto, en cada ficha de producto disfrutarás de gran cantidad de información acerca del producto deseado: descripción completa, caracteristicas y funcionalidades, medidas de todas sus partes, detalles y acabados, variedad de fotos del producto, recomendaciones para combinar, valoración de otros clientes, instrucciones de montaje en pdf y videos explicativos, etc.</p>
+      <p class="textos-parrafos">¿Qué más se puede pedir?</p>
+      <br>
+      <p class="title-textos">Incidencia postventa ¿A quién contacta</p>
+      <p class="textos-parrafos">Para resolver cualquier incidencia que te haya surgido, si el pedido lo has hecho a través de nuestra tienda online nos puedes mandar un correo electrónico a <a href="mailto:tiendaonline@ahorrototal.com">tiendaonline@ahorrototal.com</a> comentando tu problema, apunta también el número de pedido y nosotros te contestaremos lo antes posible intentando ofrecerte la mejor solución disponible a tu problema. Si lo prefieres, puedes llamarnos al teléfono 91 813 35 04 (L-V 930 a 15:00). Si el pedido lo has realizado en cualquiera de nuestras tiendas físicas de Madrid nos tienes que enviar un correo a <a href="mailto:atencionalcliente@ahorrototal.com">atencionalcliente@ahorrototal.com</a> indicando el número de pedido y en la tienda que lo compraste y te contestaremos a la mayor brevedad posible para resolverte cualquier duda</p>
+    </div>
+    
+  </main>
+  
+  @@include("partials/footer.html")
+
+  @@include("partials/modals.html")
+
+  @@include("partials/scripts.html")
+  
+</body>
+</html>

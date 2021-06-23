@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  @@include("partials/head.html")
+
+  <link rel="stylesheet" href="assets/css/index.min.css">
+</head>
+<body>
+  <div id="overlay" class="overlay" onclick="closeNav()" style="width: 0%; opacity: 0"></div>
+
+  @@include("partials/sidenav.html")
+  @@include("partials/navbar-signin.html")
+  @@include("partials/index/welcome.html")
+  
+  <main class="content">
+    
+    @@include("partials/index/productos.html")
+    
+  </main>
+  
+  @@include("partials/footer.html")
+
+  @@include("partials/modals.html")
+
+  @@include("partials/scripts.html")
+  
+</body>
+</html>
