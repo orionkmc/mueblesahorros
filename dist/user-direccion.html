@@ -556,6 +556,65 @@
     </div>
   </div>
 
+  <div id="new-pass" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="modal-title text-center">RESTAURAR CONTRASEÑA</h3>
+          <div class="d-grid gap-2">
+          
+            <div class="input-group mb-3 show_hide_password">
+              <input type="password" class="form-control" placeholder="Nueva contraseña" />
+              <a class="eye" href="javascript:void(0)">
+                <i class="fa fa-eye-slash fa-lg" aria-hidden="true"></i>
+              </a>
+            </div>
+          
+            <div class="input-group mb-3 show_hide_password">
+              <input type="password" class="form-control" placeholder="Repetir contraseña" />
+            </div>
+          
+            <div class="text-center mb-3">
+              <a href="#change-pass" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="btn btn-add" >
+                Restaurar
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="change-pass" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="modal-title text-center">CONTRASEÑA RESTAURADA</h3>
+        
+          <p class="text-center">
+            <lord-icon src="./assets/images/approved-checked-outline.json" trigger="loop" target="a" colors="primary:#203165;,secondary:#8195d1;" style="width:50%; height:50%;"></lord-icon>
+          </p>
+          <p class="text-center">
+            ¡Tu contraseña a sido a <br />
+            restaurada con exito!
+          </p>
+        
+          <div class="text-center mt-4 mb-3">
+            <a href="#login" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="btn btn-add" >
+              Iniciar sesión
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div id="register" class="modal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
@@ -634,7 +693,7 @@
               <a href="javascript:void(0)" onclick="backModal()" class="btn btn-add" >
                 Atrás
               </a>
-              <a href="#register-msg" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="btn btn-add" >
+              <a href="#mail-register" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="btn btn-add" >
                 Registrarse
               </a>
             </div>
@@ -649,6 +708,32 @@
                 <strong>Términos y condiciones.</strong>
               </a>
             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="mail-register" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="modal-title text-center">¡REVISA TU CORREO!</h3>
+        
+          <p class="text-center">
+            <lord-icon src="./assets/images/mail-open-outline.json" trigger="loop" target="a" colors="primary:#203165;,secondary:#8195d1;" style="width:50%; height:50%;"></lord-icon>
+          </p>
+          <p class="text-center">
+            Te hemos enviado un correo eletrónico a nombre@dominio.com para verificar tu cuenta.
+          </p>
+        
+          <div class="text-center mt-4 mb-3">
+            <a href="#login" data-bs-toggle="modal" data-bs-dismiss="modal" role="button" class="btn btn-add" >
+              Iniciar sesión
+            </a>
           </div>
         </div>
       </div>

@@ -64,3 +64,15 @@ function backModal() {
   $(`#${modalHideTmp}`).modal("show");
   modalHide = [];
 }
+
+$(window).ready(function() {
+  let searchParams = new URLSearchParams(window.location.search);
+  console.log(searchParams)
+  let param = searchParams.get('val');
+  if (searchParams.has('val') && param == 'pass') {
+    $("#new-pass").modal("show");
+  } else if (searchParams.has('val') && param == 'register') {
+    $("#register-msg").modal("show");
+  }
+})
+  
