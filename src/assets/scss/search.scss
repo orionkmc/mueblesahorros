@@ -1,9 +1,15 @@
 .section-search {
 	box-shadow: inset 7px 10px 15px 0 rgba($color: #000000, $alpha: 0.06);
+	.accordion-body {
+		max-height: calc(100vh - 201px);
+    overflow: auto;
+	}
 }
 .content-filtros {
 	position: sticky;
 	top: 145px;
+	max-height: calc(100vh - 145px);
+	overflow: auto;
 }
 .filtros-search i {
 	color: var(--primary-color);
@@ -83,12 +89,7 @@
 .irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before {
 	border-top-color: #fcef7f !important;
 }
-#checkBlanco + label:before,
-#checkNegro + label:before,
-#checkGris + label:before,
-#checkBlanco1 + label:before,
-#checkNegro1 + label:before,
-#checkGris1 + label:before {
+.input-check-color + label:before {
 	content: "";
 	width: 20px;
 	height: 20px;
@@ -97,20 +98,10 @@
 	border: 1px solid var(--primary-color);
 	border-radius: 10px;
 }
-#checkBlanco:checked+label:before,
-#checkNegro:checked+label:before,
-#checkGris:checked+label:before,
-#checkBlanco1:checked+label:before,
-#checkNegro1:checked+label:before,
-#checkGris1:checked+label:before {
+.input-check-color:checked+label:before {
 	border: 3px solid var(--primary-color);
 }
-#checkBlanco,
-#checkNegro,
-#checkGris,
-#checkBlanco1,
-#checkNegro1,
-#checkGris1 {
+.input-check-color {
 	display: none;
 }
 #checkBlanco + label:before,
@@ -124,6 +115,38 @@
 #checkGris + label:before,
 #checkGris1 + label:before {
 	background: gray;
+}
+#checkMarron + label:before,
+#checkMarron1 + label:before {
+	background: brown;
+}
+#checkAmarillo + label:before,
+#checkAmarillo1 + label:before {
+	background: yellow;
+}
+#checkAzul + label:before,
+#checkAzul1 + label:before {
+	background: blue;
+}
+#checkRojo + label:before,
+#checkRojo1 + label:before {
+	background: red;
+}
+#checkVerde + label:before,
+#checkVerde1 + label:before {
+	background: green;
+}
+#checkRosa + label:before,
+#checkRosa1 + label:before {
+	background: pink;
+}
+#checkMorado + label:before,
+#checkMorado1 + label:before {
+	background: violet;
+}
+#checkCeleste + label:before,
+#checkCeleste1 + label:before {
+	background: cyan;
 }
 .accordion-item {
 	border: none !important
