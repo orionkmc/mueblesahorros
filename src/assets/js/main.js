@@ -1,4 +1,16 @@
 $(document).ready(function () {
+  if (null != Cookies.get("gpdr")){
+  } else {
+    $("#modalGPDR").modal("show", {
+      backdrop: "static",
+      keyboard: false,
+    });
+  }
+  $("#modalGPDR").on("hidden.bs.modal", function(e) {
+    window.scrollTo(0, 0);
+    Cookies.set("gpdr", !0);
+  });
+
   $(".show_hide_password a").on("click", function (event) {
     event.preventDefault();
     if ($(".show_hide_password input").attr("type") == "text") {
