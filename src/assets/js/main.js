@@ -1,15 +1,12 @@
 $(document).ready(function () {
   if (null != Cookies.get("gpdr")){
   } else {
-    $("#modalGPDR").modal("show", {
-      backdrop: "static",
-      keyboard: false,
-    });
+    $("#modalGPDR").css('display', 'block');
   }
-  $("#modalGPDR").on("hidden.bs.modal", function(e) {
-    window.scrollTo(0, 0);
+  $('#aceptarGPDR').click(function() {
+    $('#modalGPDR').fadeOut(300)
     Cookies.set("gpdr", !0);
-  });
+  })
 
   $(".show_hide_password a").on("click", function (event) {
     event.preventDefault();
